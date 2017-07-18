@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+.idea
+\.tags*
+
+/docs
+/dist/**/*
+
+logs
+*.log
+npm-debug.log*
+
+.npm
+.node_repl_history

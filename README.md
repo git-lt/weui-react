@@ -1,26 +1,3 @@
-## Installation (0.4.x)
-
-With [npm](http://npmjs.com/):
-
-If React is not installed
-
-```
-npm install --save react react-dom
-npm install --save weui@1.1.0 react-weui
-```
-
-With React Installed
-
-```
-npm install weui@1.1.0 react-weui --save
-```
-
-To use the development version (`API might changes on realese version`)
-
-```
-npm install react-weui@alpha --save
-```
-
 ## Example
 
 We have several examples on the documentation. Here is the first one to get you started:
@@ -28,17 +5,15 @@ We have several examples on the documentation. Here is the first one to get you 
 // app.js
 
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 
 //import using commonJS Module *Require Plugins
 //import { Button } from 'react-weui'
 
 //import Using ES6 syntax
-import WeUI from 'react-weui';
+import WeUI from 'weui-react';
 
 //import styles
 import 'weui';
-import 'react-weui/lib/react-weui.min.css';
 
 const {Button} = WeUI;
 
