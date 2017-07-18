@@ -1,0 +1,13 @@
+.mt-msg-page {
+  position: fixed;
+  top: 0;bottom: 0; width: 100%; max-width: 450px; margin: 0 auto;
+  background: #fff;
+  z-index: 5000;
+  opacity: 0;
+  transform: translate3d(100%, 0, 0);
+  transition: transform .35s, opacity .35s;
+  &__enter{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}

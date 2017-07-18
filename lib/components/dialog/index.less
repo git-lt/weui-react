@@ -1,0 +1,57 @@
+.weui-dialog {
+  position: static;
+  margin: 0 auto;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .33);
+  transform: scale3d(1.158,1.158,1.158);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s ease, transform .3s ease;
+  &__bd {
+    max-height: 340px;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+.mt-dialog-mask {
+  z-index: -1;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s linear;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.mt-dialog {
+  &-wrap{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    max-width: 300px;
+    transform: translate(-50%, -50%);
+    min-width: 100px;
+    max-width: 450px;
+    z-index: 1010;
+    visibility: hidden;
+    z-index: -1;
+    &__active{
+      visibility: visible;
+      z-index: 2000;
+      ~ .mt-dialog-mask {
+        visibility: visible;
+        z-index: 1000;
+      }
+    }
+    &__enter{
+      .weui-dialog {
+        transform: scale3d(1,1,1);
+        opacity: 1;
+      }
+      ~ .mt-dialog-mask {
+        opacity: 1;
+      }
+    }
+  }
+}

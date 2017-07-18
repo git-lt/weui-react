@@ -1,0 +1,73 @@
+.weui-toast-wrap {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  &.top { align-items: flex-start; }
+  &.bottom { align-items: flex-end; }
+}
+.weui-toast{
+  min-width: 7.6em;
+  min-height: auto;
+  max-width: 70%;
+  width: auto;
+  position: static;
+  margin: 0;
+}
+.weui-toast__content{
+  padding: 8px 10px; margin: 0;
+  &-warning{
+    color: #FFBE00;
+    .weui-icon-warn { font-size: 16px; vertical-align: -3px; }
+  }
+}
+.weui-icon_toast{ margin: 12px 0 0; }
+.weui-icon_toast.weui-icon-cancel::before{ color: #FFFFFF; font-size: 55px; }
+
+// Toast 动画相关
+.toast-animated { animation-duration: .4s; animation-fill-mode: both; }
+
+.animated-y {
+  animation-duration: .4s;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(.36,.66,.04,1)
+}
+
+.mt-toast-enter{ animation-name: toastEnter; }
+.mt-toast-leave{ animation-name: toastLeave; }
+
+.mt-toast-top{
+  &-enter{ animation-name: toastTopEnter; }
+  &-leave{ animation-name: toastTopLeave; }
+}
+
+.mt-toast-bottom {
+  &-enter{ animation-name: toastBottomEnter; }
+  &-leave{ animation-name: toastBottomLeave; }
+}
+
+@keyframes toastEnter { 0% { opacity: 0; } 100% { opacity: 1; }}
+@keyframes toastLeave { 0% { opacity: 1; } 100% { opacity: 0; }}
+
+@keyframes toastTopEnter {
+  0% { opacity: 0; }
+  50%, 100% { opacity: 1; transform: translateY(100px); }
+}
+@keyframes toastTopLeave {
+  0% { opacity: 1; transform: translateY(100px); }
+  50%,100% { opacity: 0; transform: translateY(0px);}
+}
+
+@keyframes toastBottomEnter {
+  0% { opacity: 0; transform: translateY(0px); }
+  50%, 100% { opacity: 1; transform: translateY(-100px); }
+}
+@keyframes toastBottomLeave {
+  0% { opacity: 1; transform: translateY(-100px); }
+  50%,100% { opacity: 0; transform: translateY(0px); }
+}

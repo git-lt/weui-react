@@ -1,0 +1,50 @@
+.mt-tip {
+  box-sizing: border-box;
+  & > * {box-sizing: border-box;}
+  min-height: .45rem;
+  position: relative;
+  padding: .1rem;
+  &_default{
+    .mt-tip-bd{ text-align: center; }
+  }
+  &_warning{
+    background-color: #fff6eb;
+  }
+  &_info{
+    background-color: #eaf4fe;
+  }
+  &_error{
+    background-color: #fdece8;
+  }
+  &_success{
+    background-color:#e8f9f0;
+  }
+  &-inner{
+    display: flex;
+  }
+  &-hd{
+    width: .25rem;
+    text-align: left;
+    &-icon {
+      font-size: .16rem;
+      position: relative;
+    }
+  }
+  &-bd{
+    flex:1;
+    color:#888;
+    font-size: .14rem;
+    text-align: left;
+  }
+  &-ft{
+    width: .3rem;
+    &-icon{
+      font-size: .18rem;
+      color: #888;
+      transform: rotate(45deg);
+      display: inline-block;
+      position: relative;
+      top: .03rem;
+    }
+  }
+}

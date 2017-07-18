@@ -1,0 +1,88 @@
+.mt-checkbox, .mt-radio{
+  .weui-cell-checkbox {
+    & > * { pointer-events: none; }
+  }
+  &__input {
+    opacity: 0;
+    &:disabled ~ .mt-icon-checked { opacity: .5; }
+  }
+  .weui-cell__hd {
+    padding-right: .8em;
+  }
+  .mt-icon-checked{
+    position: relative;
+    right: 1em;
+    &:after,&:before{
+      content: ' ';
+      display: block;
+      width: .2rem; height: .2rem;
+      position: absolute; left: 0;top: 0;
+      box-sizing: border-box;
+      transform: translateZ(0);
+      transform-style: preserve-3d;
+      backface-visibility:hidden;
+      transition: .1s ease-in-out;
+    }
+    &:after{
+  		border:1px solid #333;
+    }
+  }
+  &_circle, &_circle-fill{
+    .mt-icon-checked:after { border-radius: 999px; }
+  }
+  &_rect,&_rect-fill {
+    .mt-icon-checked:after { border-radius: 0; }
+  }
+  &_circle-fill,&_rect-fill{
+    .mt-icon-checked:before {
+      content:'\EA06';
+      left: 0; right: 0;
+      font: normal normal normal 14px/1 "weui";
+      font-size: inherit;
+      text-rendering: auto;
+      font-size: 20px;
+      color: #09BB07;
+      overflow: hidden;
+      opacity: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+  &_rect-fill {
+    .mt-icon-checked:before {
+      font-size: 28px;
+      line-height: 19px;
+      text-indent: -4px;
+    }
+  }
+}
+
+
+// checked style
+.mt-checkbox_circle, .mt-radio_circle,.mt-checkbox_rect, .mt-radio_rect {
+  .mt-checkbox__input:checked ~ .mt-icon-checked:after {
+    border-top-style: none;
+    border-right-style: none;
+    border-radius: 0;
+    transform: translateY(3px) rotateZ(-45deg);
+    height: .6em;
+    border-color: green;
+  }
+}
+
+.mt-checkbox_circle-fill, .mt-radio_circle-fill {
+  .mt-checkbox__input:checked ~ .mt-icon-checked:before {
+    opacity: 1;
+  }
+  .mt-checkbox__input:checked ~ .mt-icon-checked:after {
+    border-color: #09BB07;
+  }
+}
+
+.mt-checkbox_rect-fill, .mt-radio_rect-fill {
+  .mt-checkbox__input:checked ~ .mt-icon-checked:before {
+    opacity: 1;
+  }
+  .mt-checkbox__input:checked ~ .mt-icon-checked:after {
+    border-color: #09BB07;
+  }
+}

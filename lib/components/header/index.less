@@ -1,0 +1,60 @@
+.mt-header {
+  position: relative;
+  padding: .02rem 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  height: .42rem;
+  &-ink-bar{
+    height: 2px;
+    background-color: #32c5bd;
+    position: absolute;
+    left: 0; right: 0;
+    bottom: 0; top:auto;
+  }
+  &-back{
+    &-text{
+      display: inline-block;
+      line-height: 1;
+      padding: 5px 0;
+    }
+    &-icon{
+      float: left;
+      color: #ccc;
+      font-size: .24rem;
+      position: relative;
+      top: 1px;
+    }
+  }
+  &-icon-home{
+    font-size: .22rem;
+    vertical-align: middle;
+  }
+  &-title {
+    margin: 0 .88rem;
+    line-height: .38rem;
+    text-align: center;
+    height: .38rem;
+    font-size: .155rem;
+    font-weight: 400;
+    width: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #333;
+  }
+  &-right,&-left{
+    position: absolute;
+    top: .1rem;
+    display: block;
+    font-size: .14rem;
+    &:active{
+      opacity: .6;
+    }
+  }
+  &-right{
+    right: .15rem;
+  }
+  &-left{
+    left: .1rem;
+  }
+}
