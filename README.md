@@ -12,6 +12,8 @@
 
 ## 示例Demo
 
+<img src="http://7xi480.com1.z0.glb.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-07-19%20%E4%B8%8B%E5%8D%886.06.36.png" width="300" alt="">
+
 [在线Demo](http://aitter.oschina.io/)
 
 ## 安装使用
