@@ -19,7 +19,7 @@ var Demo = React.createClass({
       let { activeIndex1, activeIndex2 } = this.state;
 
       return (
-        <Page title="Tab 组件示例">
+        <Page title="Tab">
           <Tab lineLeft={activeIndex1*50+'%'} lineWidth="3em">
             <TabItem index={0} activeIndex={activeIndex1} onClick={ this.changeTabEv1 }>已发货</TabItem>
             <TabItem index={1} activeIndex={activeIndex1} onClick={ this.changeTabEv1 }>未发货</TabItem>

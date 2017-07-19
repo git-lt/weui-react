@@ -5,7 +5,7 @@ import Page from '../../component/page'
 var Demo = React.createClass({
     render: function() {
         return (
-          <Page title="Input 组件示例">
+          <Page title="Input">
             <Group title="基础使用">
               <Input label="用户名" type="text" placeholder="请输入用户名" showClear/>
               <Input label="密码" type="password" placeholder="请输入密码" showClear/>

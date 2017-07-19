@@ -12,7 +12,7 @@ const msgLabel = <span>意见反馈<br/><p className="c-8" style={{fontSize:'12p
 var Demo = React.createClass({
     render: function() {
         return (
-          <Page title="Badge 组件示例">
+          <Page title="Badge">
             <Group title="新消息提示跟摘要信息后，统一在列表右侧">
               <Cell label="了解更多" isLink desc={<span>详细信息<Badge style={{marginLeft:'5px', verticalAlign:'1px'}}/></span>}/>
             </Group>

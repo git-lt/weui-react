@@ -9,7 +9,7 @@ module.exports = {
     context: path.join(__dirname, 'docs'),
     entry: {
         js: ['babel-polyfill', './app.js'],
-        vendor: ['react', 'classnames', 'react-router', 'react-dom', 'react-addons-css-transition-group']
+        vendor: ['react', 'classnames', 'react-router', 'pubsub-js']
     },
     output: {
         path: path.resolve(__dirname, 'dist/docs'),

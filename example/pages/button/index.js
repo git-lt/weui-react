@@ -12,7 +12,7 @@ var DemoButton = React.createClass({
   },
   render: function() {
       return (
-        <Page title="Button 示例" spacing>
+        <Page title="Button" spacing>
           <GroupTitle>默认显示</GroupTitle>
           <Button>默认按钮 - default</Button>
           <Button type="primary">主色调 - primary</Button>

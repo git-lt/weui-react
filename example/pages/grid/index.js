@@ -7,7 +7,7 @@ const icon = <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAM
 var Demo = React.createClass({
   render() {
       return (
-        <Page title="Grid 组件示例">
+        <Page title="Grid">
           <GroupTitle>基础网格</GroupTitle>
           <Grid>
             <GridItem label="体检预约" icon={icon}></GridItem>

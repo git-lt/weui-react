@@ -38,7 +38,7 @@ var Demo = React.createClass({
     render: function() {
       let { data1, data2 } = this.state;
         return (
-          <Page title="FormPreview 组件示例">
+          <Page title="FormPreview">
             <FormPreview  {...data1}/>
             <FormPreview  {...data2}/>
           </Page>

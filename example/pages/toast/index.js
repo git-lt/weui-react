@@ -8,7 +8,7 @@ var Demo = React.createClass({
   },
   render: function() {
       return (
-        <Page title="Toast 组件示例" subTitle="Toast 一般用于表单验证提示错误消息，异步提交显示 loading, 异步结束，显示提交结果状态">
+        <Page title="Toast" subTitle="Toast 一般用于表单验证提示错误消息，异步提交显示 loading, 异步结束，显示提交结果状态">
           <Group title="基本使用">
             <Cell label="toast.show(...)" desc="默认" onClick={()=> toast.show('手机号格式不正确')} />
             <Cell label="toast.show(...)" desc="居上" onClick={()=> toast.show({message:'正在使用wifi网络', position:'top'})} />

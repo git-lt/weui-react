@@ -22,7 +22,7 @@ var Demo = React.createClass({
       let { activeIndex1, activeIndex2 } = this.state;
 
       return (
-        <Page title="Sticky 组件示例">
+        <Page title="Sticky">
           <div style={{ height:'.5rem'}}>
 
             <Sticky checkStickySupport ={ false }>

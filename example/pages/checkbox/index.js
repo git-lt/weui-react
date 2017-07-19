@@ -110,7 +110,7 @@ var Demo = React.createClass({
   },
   render: function() {
       return (
-        <Page title="Checkbox 组件示例">
+        <Page title="Checkbox" subTitle="checkbox 及 radio 的在UI表现上基本一致，区别在于多选和单选，这里抽离为一个组件，通过状态数据配置多选和单选逻辑">
             <h4 className="weui-cells__title">空心 checkbox  右对齐</h4>
             <Checkbox
               data={ this.state.data1 }

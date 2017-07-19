@@ -37,7 +37,7 @@ var Demo = React.createClass({
       let { list } = this.state;
 
       return (
-        <Page title="Swiper 组件示例">
+        <Page title="Swiper">
           <GroupTitle>基本使用</GroupTitle>
           <Swiper list = { list } current={this.state.current1} onChange={i=>console.log(i)}/>
 

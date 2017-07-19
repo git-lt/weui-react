@@ -18,7 +18,7 @@ var Demo = React.createClass({
   },
   render: function() {
       return (
-        <Page title="Offcanvas 组件示例" subTitle="弹出层组件，相比于dialog组件，有更高的灵活性，常用于活动信息提示，选择弹出层，操作弹出层，自定义内容，内置多种弹出方式，可满足大部分需要弹出层的UI交互需求">
+        <Page title="Offcanvas" subTitle="弹出层组件，相比于dialog组件，有更高的灵活性，常用于活动信息提示，选择弹出层，操作弹出层，自定义内容，内置多种弹出方式，可满足大部分需要弹出层的UI交互需求">
           <Group title="居中定位">
             <Cell label="slide-in-top" desc="center" onClick={ ()=>this.setState({ centerShowTop: true })} isLink/>
             <Cell label="slide-in-bottom" desc="center" onClick={ ()=>this.setState({ centerShowBottom: true })} isLink/>

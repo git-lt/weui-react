@@ -11,7 +11,7 @@ var Demo = React.createClass({
     },
     render: function() {
       return (
-        <Page title="Textarea 组件示例">
+        <Page title="Textarea">
           <Group title="基本使用">
             <Textarea placeholder="请填写详细信息"></Textarea>
           </Group>

@@ -43,7 +43,7 @@ var Demo = React.createClass({
     },
     render: function() {
         return (
-          <Page title="Msg 组件示例">
+          <Page title="Msg">
             <div className="mt-page-actions-warp">
               <Button type="primary" onClick={ this.showSuccessEv }>操作成功</Button>
               <Button type="warn" onClick={ this.showFailEv }>操作失败</Button>

@@ -8,7 +8,7 @@ const checkedIcon = <i className="weui-icon-success-no-circle" style={{fontSize:
 let Home = React.createClass({
   render(){
     return (
-      <Page title="Weui React 组件库 v0.0.1" subTitle="每天健康移动端UI组件库，持续更新中...">
+      <Page title="Weui React 组件库" subTitle="每天健康移动端UI组件库，持续更新中...">
         <Group title="基础组件">
           <Cell label="Divider" desc="分隔线" icon={ checkedIcon } href={'/#/divider'}/>
           <Cell label="Grid" desc="宫格" icon={ checkedIcon } href={'/#/grid'}/>

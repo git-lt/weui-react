@@ -72,6 +72,14 @@ npm i babel-plugin-component --save-dev
 ]
 ```
 
+然后在项目中正常引入相关组件，最后会被编译成按需引入的方式
+
+```javascript
+import { Button } from 'mt-weui-react'
+
+// 经过插件转译为：
+import Button from 'mt-weui-react/lib/components/button'
+```
 
 
 ## 本地开发

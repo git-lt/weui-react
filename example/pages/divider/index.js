@@ -5,7 +5,7 @@ import Page from '../../component/page'
 var Demo = React.createClass({
   render: function() {
       return (
-        <Page title="Divider 组件示例">
+        <Page title="Divider">
           <Divider>华丽的分隔线</Divider>
 
           <Divider>我有是底线的</Divider>

@@ -41,7 +41,7 @@ var Demo = React.createClass({
   },
   render: function() {
       return (
-        <Page title="Dialog 组件示例">
+        <Page title="Dialog">
           <Group title="基本使用">
             <Cell label="dialog.show(...)" desc="默认" onClick={()=>dialog.show('是否确认删除？')} isLink/>
             <Cell label="dialog.show({...})" desc="多个操作" onClick={ this.showDialogActions } isLink/>

@@ -6,7 +6,7 @@ import './index.less'
 var Demo = React.createClass({
   render: function() {
       return (
-        <Page title="Flex 组件示例">
+        <Page title="Flex">
           <div className="eg-flex-wrap">
 
             <div className="box">
