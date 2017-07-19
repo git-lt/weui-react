@@ -1,6 +1,6 @@
 {
-  "name": "weui-react",
-  "version": "0.0.1",
+  "name": "mt-weui-react",
+  "version": "0.0.2",
   "description": "weui for react",
   "main": "./lib",
   "scripts": {
@@ -59,8 +59,6 @@
     "babel-standalone": "^6.18.2",
     "codemirror": "^5.20.2",
     "css-loader": "^0.23.0",
-    "postcss": "^5.2.10",
-    "postcss-loader": "^1.2.2",
     "enzyme": "^2.6.0",
     "eslint": "^1.10.3",
     "eslint-plugin-react": "^3.11.3",
@@ -80,6 +78,8 @@
     "mocha": "^2.3.4",
     "nyc": "^9.0.1",
     "open-browser-webpack-plugin": "0.0.1",
+    "postcss": "^5.2.10",
+    "postcss-loader": "^1.2.2",
     "raw-loader": "^0.5.1",
     "react-router": "^0.13.3",
     "rimraf": "^2.4.3",
