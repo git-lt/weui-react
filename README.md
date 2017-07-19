@@ -22,16 +22,20 @@
 yarn add mt-react-weui
 ```
 
-### 按需引用
+### 全部引用
 
 ```javascript
 import React from 'react'
-import { Button } from 'mt-react-weui';
+import { Button, Flex } from 'mt-weui-react'
+const FlexItem = Flex.FlexItem
 
 let App = React.createClass({
   render() {
       return (
-          <Button>hello wechat</Button>
+        <Flex>
+          <FlexItem><Button>hello wechat</Button></FlexItem>
+          <FlexItem><Button>hello wechat</Button></FlexItem>
+        </Flex>
       );
   }
 })
@@ -41,6 +45,34 @@ ReactDOM.render((
 ), document.getElementById('container'));
 
 ```
+
+## 按需引用
+
+在非SPA应用中使用，最好使用按需要引用的方式加载需要用到的组件，以节省加载资源，按需引用有两中方式引用
+
+### 直接引用
+
+```javascript
+import Button from 'mt-weui-react/lib/components/button'
+```
+
+### 使用Babel插件，编译成上面的方式
+
+安装 [babel-plugin-component](https://github.com/QingWei-Li/babel-plugin-component) babel插件
+
+```
+npm i babel-plugin-component --save-dev
+```
+
+在文件 `.babelrc` 文件中添加配置
+
+```javascript
+"plugins": [
+ ["component", {"libraryName": "mt-weui-react", "libDir":"lib/components", "style": false }]
+]
+```
+
+
 
 ## 本地开发
 

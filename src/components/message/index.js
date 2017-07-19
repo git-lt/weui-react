@@ -94,4 +94,7 @@ TYPES.forEach(v=>{
   }
 })
 
-export { Message, dialog, toast }
+Message.dialog = dialog
+Message.toast = toast
+
+export default Message
