@@ -14,7 +14,7 @@ var Demo = React.createClass({
           <Button text="查看订单" type="primary" onClick={ this.closeMsg }/>,
           <Button text="返回首页" onClick={ this.closeMsg }/>,
         ],
-        footerLinks: [{href:TJ.tourl('/welcome'), text:'返回首页'}],
+        footerLinks: [{href:'/', text:'返回首页'}],
         footerText: '最终解释权归每天健康所有',
       }
     },

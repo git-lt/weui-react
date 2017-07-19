@@ -5,24 +5,16 @@
   "main": "./lib",
   "scripts": {
     "start": "webpack-dev-server --hot --inline --progress --colors --port 8081",
-    "startdoc": "webpack-dev-server --config webpack.config.doc.js --hot --inline --progress --colors --port 8081",
-    "clean": "rimraf ./lib ./coverage",
     "build:less": "find lib/ -name '*.less' -exec lessc -x {} \\; > ./lib/react-weui.min.css",
     "build": "yarn run clean & NODE_ENV=production babel ./src --out-dir ./lib --copy-files && yarn run build:less",
-    "build:example": "rimraf ./dist && webpack --config webpack.config.prod.js --progress --colors -p",
-    "build:doc": "rimraf ./dist/docs && webpack --config webpack.config.doc.js --progress --colors -p",
-    "build:page": "npm run build:example && npm run build:doc",
+    "build:example": "webpack --config webpack.config.prod.js --progress --colors -p",
     "lint": "eslint 'src/**/*.js'",
-    "pretest": "npm run lint",
     "test": "mocha --compilers js:babel-core/register --recursive -r ignore-styles -r jsdom-global/register",
-    "test:watch": "npm run test -- --watch",
-    "coverage": "npm run lint & nyc --require babel-core/register mocha -r ignore-styles -r jsdom-global/register && nyc report --reporter=lcov",
-    "c9startdoc": "webpack-dev-server --config webpack.config.doc.js --hot --inline --progress --colors --host $IP --port $PORT",
-    "c9start": "webpack-dev-server --hot --inline --progress --colors --host $IP --port $PORT"
+    "test:watch": "npm run test -- --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/weui/react-weui.git"
+    "url": "git+https://github.com/git-lt/weui-react"
   },
   "keywords": [
     "mobile",
@@ -34,9 +26,9 @@
   "author": "aitter",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/weui/react-weui/issues"
+    "url": "https://github.com/git-lt/weui-react/issues"
   },
-  "homepage": "https://github.com/weui/react-weui",
+  "homepage": "http://aitter.oschina.io/",
   "dependencies": {
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-runtime": "^6.18.0",

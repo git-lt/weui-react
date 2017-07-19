@@ -111,7 +111,6 @@ var Demo = React.createClass({
   render: function() {
       return (
         <Page title="Checkbox 组件示例">
-          <div className="pl20 pr20">
             <h4 className="weui-cells__title">空心 checkbox  右对齐</h4>
             <Checkbox
               data={ this.state.data1 }
@@ -167,14 +166,13 @@ var Demo = React.createClass({
             />
 
           <h4 className="weui-cells__title">checkbox 限制选择个数 [ 最多选择2项 ]</h4>
-            <Checkbox
-              data={ this.state.data1 }
-              checkedItems={ this.state.disChkRes2 }
-              shape="rect"
-              max={2}
-              onClick={ this.changeEv8 }
-            />
-          </div>
+          <Checkbox
+            data={ this.state.data1 }
+            checkedItems={ this.state.disChkRes2 }
+            shape="rect"
+            max={2}
+            onClick={ this.changeEv8 }
+          />
         </Page>
       );
   },
