@@ -61,7 +61,7 @@ var Input = React.createClass({
 
     const clsWarp = classNames('weui-cell', {
       'weui-cell_warn': showWarn,
-      'weui-cell_vcode': vcode,
+      'weui-cell_vcode maincolor': vcode,
       'weui-cell_select weui-cell_select-after': type === 'select',
       [className]: className
     })

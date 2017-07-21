@@ -57,7 +57,7 @@ var Header = React.createClass({
           { rightSlot }
           {showHome && <a className="iconfont icon-shouye mt-header-icon-home" href="javascript:;" onClick={ this.goHome }></a>}
         </div>
-        <div className="mt-header-ink-bar"></div>
+        <div className="mt-header-ink-bar mainbackground"></div>
       </div>
     )
   }

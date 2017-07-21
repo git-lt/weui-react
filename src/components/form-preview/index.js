@@ -43,7 +43,7 @@ var FormPreview = React.createClass({
 
 
 FormPreview.propTypes = {
-  label: React.PropTypes.any, // 一般使用文本，更复杂的可使用jsx
+  label: React.PropTypes.any,
   value: React.PropTypes.string,
   items: React.PropTypes.array,
   buttons: React.PropTypes.array,

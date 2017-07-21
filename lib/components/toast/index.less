@@ -10,24 +10,25 @@
   max-width: 450px;
   &.top { align-items: flex-start; }
   &.bottom { align-items: flex-end; }
-}
-.weui-toast{
-  min-width: 7.6em;
-  min-height: auto;
-  max-width: 70%;
-  width: auto;
-  position: static;
-  margin: 0;
-}
-.weui-toast__content{
-  padding: 8px 10px; margin: 0;
-  &-warning{
-    color: #FFBE00;
-    .weui-icon-warn { font-size: 16px; vertical-align: -3px; }
+
+  .weui-toast{
+    min-width: 7.6em;
+    min-height: 1.5em;
+    max-width: 70%;
+    width: auto;
+    position: static;
+    margin: 0;
   }
+  .weui-toast__content{
+    padding: 8px 10px; margin: 0;
+    &-warning{
+      color: #FFBE00;
+      .weui-icon-warn { font-size: 16px; vertical-align: -3px; }
+    }
+  }
+  .weui-icon_toast{ margin: 12px 0 0; }
+  .weui-icon_toast.weui-icon-cancel::before{ color: #FFFFFF; font-size: 55px; }
 }
-.weui-icon_toast{ margin: 12px 0 0; }
-.weui-icon_toast.weui-icon-cancel::before{ color: #FFFFFF; font-size: 55px; }
 
 // Toast 动画相关
 .toast-animated { animation-duration: .4s; animation-fill-mode: both; }
