@@ -76,7 +76,7 @@ const tool = {
 
     let props = [];
     for(let k in meta.events){
-      let t = meta.props[k];
+      let t = meta.events[k];
       props.push('|'+[k, t.params||'', t.version||'', t.desc||'' ].join('|')+'|')
     }
     doc += props.join('\n')

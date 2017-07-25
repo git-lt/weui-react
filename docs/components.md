@@ -66,6 +66,31 @@ import { FlexboxItem } from 'mt-weui-react'
 |order|String|||`flex`的`order`属性|
 
 ----
+### <span class="mt-component-name">Header</span>
+<span class="mt-component-link"><a href="#" router-link="/demos/header">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/header" target="_bank">组件源码</a></span>
+``` js
+import { Header } from 'mt-weui-react'
+```
+
+<span class="mt-props-title">Props</span>
+
+| name  | type | default | version | description |
+|-------|------|---------|---------|-------------|
+|title|Any|||标题，一般使用文本，更复杂的可使用jsx|
+|backText|String|||返回的内容文字|
+|showBack|Boolean|true||是否显示左侧的返回按钮|
+|showHome|Boolean|true||是否显示右侧的首页图标|
+|homeUrl|String|||跳转到首页的首页地址|
+|preventGoBack|Boolean|false,||是否阻止返回|
+|left|Any|||左侧的内容，可以是字符也可以是JSX|
+|right|Any|||右侧的内容，可以是字符也可以是JSX|
+
+<span class="mt-props-title">Events</span>
+
+| name  | params | version | description |
+|-------|--------|---------|-------------|
+|onClickBack|||点击返回时执行的事件，此时不会自动返回|
+----
 ### <span class="mt-component-name">Tab</span>
 <span class="mt-component-link"><a href="#" router-link="/demos/tab">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/tab" target="_bank">组件源码</a></span>
 <p><span class="mt-component-name">Tab</span></p>
