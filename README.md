@@ -111,7 +111,7 @@ yarn run build:example
 yarn run build:docs
 ```
 
-本地预览文档
+### 预览文档
 
 ```
 yarn run docs
