@@ -28,11 +28,9 @@ let demoTpl = fs.readFileSync(src_demo_tpl, 'utf-8')
 
 let main = {
   run: function(){
-    // this.runBuildDemos();
+    this.runBuildDemos();
 
     this.runBuildDocs(function(props, changes){
-      // console.log(props)
-      // console.log(changes)
       buildPropsDoc(props)
       buildChangesDoc(changes)
     });
