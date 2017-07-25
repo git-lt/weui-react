@@ -9,7 +9,7 @@ var Tab = React.createClass({
     let { lineWidth, lineLeft, lineHeight, innerWidth, lineColor, bgColor, children } = this.props;
     let lineSty = { width: lineWidth, height: lineHeight }
 
-    lineColor && lineSty.backgroundColor = lineColor
+    lineColor && (lineSty.backgroundColor = lineColor)
 
     return(
       <div className="mt-tab" style={{ backgroundColor: bgColor }}>

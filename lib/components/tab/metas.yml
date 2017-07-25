@@ -1,0 +1,56 @@
+items:
+  - tab
+  - tab-item
+tab:
+  tips:
+    - 需要和 `TabItem` 组件配合使用，`TabItem` 是 `Tab` 的子组件
+  props:
+    bgColor:
+      type: String
+      default: 'transparent'
+      desc: Tab的背景颜色
+    lineWidth:
+      type: String
+      default: '100%'
+      desc: 指示线的宽度
+    lineLeft:
+      type: String
+      default: '0%'
+      desc: 指示线离左边的距离，由外部状态计算得来
+    lineHeight:
+      type: String
+      default: '2px'
+      desc: 指示线的高度
+    lineColor:
+      type: String
+      default: ''
+      desc: 线的颜色
+    innerWidth:
+      type: String
+      default: '100%'
+      desc: Tab自身的宽度
+  changes:
+    v0.1.4:
+      - '[feature] 添加 `lineColor` 提供指示线颜色的配置'
+tab-item:
+  props:
+    disabled:
+      type: Boolean
+      default: false
+      desc: 是否禁用
+    index:
+      type: Number
+      default: 0
+      desc: 组件索引值
+    acitveIndex:
+      type: Number
+      default: 0
+      desc: 当前选中的tab索引
+    onClick:
+      type: Function
+      default: noop
+      desc: 点击事件
+    height:
+      type: String
+      default: '.5rem'
+      desc: tab-item的高度

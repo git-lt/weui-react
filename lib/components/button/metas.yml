@@ -1,0 +1,33 @@
+props:
+  type:
+    type: String
+    default: default
+    desc: 按钮类型，可选值为 `default,primary,warn`
+  disabled:
+    type: Boolean
+    default: false
+    desc: 是否不可点击
+  text:
+    type: String
+    default: ''
+    desc: 按钮文字
+  mini:
+    type: Boolean
+    default: false
+    desc: 是否为mini类型，即小尺寸的按钮
+  plain:
+    type: Boolean
+    default: false
+    desc: 是否是plain样式，没有背景色
+  actionType:
+    type: String
+    default: ''
+    desc: '`button` 的type属性，默认为浏览器默认(submit)，可选为 `submit` `button` `reset`'
+  loading:
+    type: Boolean
+    default: false
+    desc: 是否显示loading
+  href:
+    type: String
+    default: ''
+    desc: 跳转链接
