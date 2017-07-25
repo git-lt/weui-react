@@ -34,6 +34,7 @@ var Toast = React.createClass({
     let {className, type, children, position, show, message, ...others} = this.props;
 
     const cls = classNames('weui-toast', {
+        'weui-toast_text': type === 'default' || type === 'warning',
         'mt-toast-enter toast-animated': show && position !== 'top' && position !== 'bottom',
         'mt-toast-leave toast-animated': !show && position !== 'top' && position !== 'bottom',
         'mt-toast-top mt-toast-top-enter animated-y': show && position === 'top',
@@ -45,6 +46,7 @@ var Toast = React.createClass({
 
     const iconTpl = iconTpls[type] || null;
     if(type == 'warning') message = <span className="weui-toast__content-warning"><i className="weui-icon-warn weui-icon_msg-primary"></i> { message }</span>;
+    if(type == 'loading') message = message || children || '加载中';
 
     return(
       <div  style={{display: this.state.display ? 'block' : 'none'}}>

@@ -1,0 +1,24 @@
+props:
+  show:
+    type: Boolean
+    defualt: false
+    desc: 是否显示
+  type:
+    type: String
+    default: 'default'
+    desc: '类型 `default`, `success`, `loading`, `warning`, `success`, `cancel` '
+  position:
+    type: String,
+    default: ''
+    desc: '显示的位置，可选择 `top`、`bottom`'
+  message:
+    type: 'Any'
+    default: ''
+    desc: '显示的内容，可以是JSX'
+events:
+  onShow:
+    params: ''
+    desc: 打开的回调
+  onClose:
+    params: ''
+    desc: 关闭的回调

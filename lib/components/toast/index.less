@@ -13,11 +13,13 @@
 
   .weui-toast{
     min-width: 7.6em;
-    min-height: 1.5em;
     max-width: 70%;
     width: auto;
     position: static;
     margin: 0;
+    &_text {
+      min-height: 1.5em;
+    }
   }
   .weui-toast__content{
     padding: 8px 10px; margin: 0;
@@ -27,6 +29,7 @@
     }
   }
   .weui-icon_toast{ margin: 12px 0 0; }
+  .weui-icon_toast.weui-loading{ margin: 26px 0 0;}
   .weui-icon_toast.weui-icon-cancel::before{ color: #FFFFFF; font-size: 55px; }
 }
 

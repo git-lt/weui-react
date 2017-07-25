@@ -38,5 +38,7 @@ events:
     desc: 点击返回时执行的事件，此时不会自动返回
 
 changes:
+  v0.1.9:
+    - '[feature] 添加Header容器，使用Header Fixed定位'
   v0.1.8:
     - '[feature] 添加 `lineColor` 用于配置底边线颜色'
