@@ -13,6 +13,7 @@ example
 test
 .babelrc
 .gitignore
+docs
 webpack.*
 yarn.lock
 npm-debug.log
