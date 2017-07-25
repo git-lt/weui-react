@@ -1,15 +1,5 @@
-importName: 'Badge'
-warnings:
-  - 'asdfdfasdfasdf2222'
-tips:
-  - 'asdfasfdas1111'
 props:
   text:
     type: String
     default: ''
     desc: 显示的文字
-changes:
-  v2.3.3:
-    - '[feature] 支持没有指定文字时为 红点 样式'
-  v2.2.1-rc.2:
-    - '[fix] 修复个位数字样式不正确 #1223'

@@ -28,8 +28,8 @@ let demoTpl = fs.readFileSync(src_demo_tpl, 'utf-8')
 
 let main = {
   run: function(){
+    this.runBuildDemos();
 
-    // this.runBuildDemos();
     this.runBuildDocs(function(props, changes){
       buildPropsDoc(props)
       buildChangesDoc(changes)
@@ -70,13 +70,16 @@ let main = {
 main.run();
 
 
+
+
 /**
  * 生成 示例 使用文档
  */
 function buildDemoDoc(info) {
+  let url = `http://aitter.oschina.io/#/${info.fileName}`
   let doc = demoTpl.replace('$title',info.comName)
     .replace('$js', info.content)
-    .replace('$path', info.fileName);
+    .replace(/\$url/g, url);
 
     fs.writeFileSync(path.join(dist_demo_dir, `/${info.fileName}.md`), doc)
 }

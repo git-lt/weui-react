@@ -1,7 +1,0 @@
-## $title
-
-## Tip
-
-### Props
-
-### Events

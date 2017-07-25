@@ -1,9 +1,11 @@
 ## Tip
 
 ### 演示
-<div style="width:377px;height:667px;display:inline-block;border:1px dashed #ececec;border-radius:5px;overflow:hidden;">
-  <iframe src="http://aitter.oschina.io/#/tip" width="375" height="667" border="0" frameborder="0"></iframe>
-</div>
+
+<img width="100" src="http://qr.topscan.com/api.php?text=http://aitter.oschina.io/#/tip"/>
+
+<a href="http://aitter.oschina.io/#/tip" target="_blank" style="font-size:12px;color:#888;">demo 原始链接：http://aitter.oschina.io/#/tip</a>
+
 
 ### 使用示例
 
