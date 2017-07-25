@@ -105,6 +105,21 @@ yarn run build:example
 
 示例Demo发布到 `/dist` 目录下
 
+### 文档
+
+#### 生成文档
+
+```
+yarn run build:docs
+```
+
+本地预览文档
+
+```
+yarn run docs
+```
+
+打开 `http://localhost:8087` 预览文档
 
 ## TODO LIST
 

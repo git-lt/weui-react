@@ -3,3 +3,10 @@ props:
     type: String
     default: ''
     desc: 显示的文字
+
+# 版本变更示例
+# changes:
+#   v2.3.3:
+#     - '[feature] 支持没有指定文字时为 红点 样式'
+#   v2.2.1:
+#     - '[fix] 修复个位数字样式不正确 #1223'

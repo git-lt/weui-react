@@ -28,9 +28,11 @@ let demoTpl = fs.readFileSync(src_demo_tpl, 'utf-8')
 
 let main = {
   run: function(){
-    this.runBuildDemos();
+    // this.runBuildDemos();
 
     this.runBuildDocs(function(props, changes){
+      // console.log(props)
+      // console.log(changes)
       buildPropsDoc(props)
       buildChangesDoc(changes)
     });
@@ -56,11 +58,43 @@ let main = {
         let fileInfo = getFileInfo(file);
 
         let metas = yaml.safeLoad(fileInfo.content);
-        metas.comName = fileInfo.comName;
-        metas.fileName = fileInfo.fileName;
 
-        props.push(metas);
-        metas.changes && changes.push(metas.changes);
+        if(Array.isArray(metas.items)){
+          let newMetas = {isItems: true, items:[], comName: fileInfo.comName, fileName: fileInfo.fileName};
+
+          metas.items.forEach(v=>{
+            let t = {};
+            t = metas[v];
+            t.comName = PascalCase(v);
+            t.fileName = v;
+
+            if(t.changes){
+              Object.keys(t.changes).map(c=>{
+                t.changes[c] = t.changes[c].map(i=>{
+                  return t.comName + ' - ' + i;
+                })
+              })
+              changes.push(t.changes);
+            }
+            newMetas.items.push(t);
+          })
+
+          props.push(newMetas);
+        }else{
+          metas.comName = fileInfo.comName;
+          metas.fileName = fileInfo.fileName;
+
+          if(metas.changes){
+            Object.keys(metas.changes).map(c=>{
+              metas.changes[c] = metas.changes[c].map(i=>{
+                return metas.comName + ' - ' + i;
+              })
+            })
+
+            changes.push(metas.changes);
+          }
+          props.push(metas);
+        }
       })
       callback(props, changes)
     })
@@ -68,7 +102,6 @@ let main = {
 }
 
 main.run();
-
 
 
 

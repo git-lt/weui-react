@@ -6,8 +6,11 @@ import TabItem from './tab-item'
 
 var Tab = React.createClass({
   render(){
-    let { lineWidth, lineLeft, lineHeight, innerWidth, bgColor, children } = this.props;
+    let { lineWidth, lineLeft, lineHeight, innerWidth, lineColor, bgColor, children } = this.props;
     let lineSty = { width: lineWidth, height: lineHeight }
+
+    lineColor && lineSty.backgroundColor = lineColor
+
     return(
       <div className="mt-tab" style={{ backgroundColor: bgColor }}>
         <div className="mt-tab-inner" style={{ width: innerWidth}}>
@@ -28,6 +31,7 @@ Tab.propTypes = {
   lineLeft: React.PropTypes.string,
   lineHeight: React.PropTypes.string,
   innerWidth: React.PropTypes.string,
+  lineColor: React.PropTypes.string,
 };
 
 Tab.defaultProps = {
@@ -36,6 +40,7 @@ Tab.defaultProps = {
   lineLeft: '0',
   lineHeight: '2px',
   innerWidth: '100%',
+  lineColor: '',
 };
 
 Tab.TabItem = TabItem

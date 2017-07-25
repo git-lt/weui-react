@@ -1,0 +1,25 @@
+items:
+  - flexbox
+  - flexbox-item
+flexbox:
+  props:
+    gutter:
+      type: Number
+      default: 8
+      desc: 间隙像素大小
+    justify:
+      desc: '`flex`的 `justify-content`属性'
+    align:
+      desc: '`flex`的`align-items`属性'
+    wrap:
+      desc: '`flex`的`flex-wrap`属性'
+    direction:
+      desc: '`flex`的`flex-direction`属性'
+flexbox-item:
+  props:
+    span:
+      type: Number
+      desc: 占用宽度，如果不设，所有flexbox-item将平分
+    order:
+      type: String
+      desc: '`flex`的`order`属性'
