@@ -47,20 +47,22 @@ var Header = React.createClass({
     if(isWechat || isAlipay) return null;
 
     return(
-      <div className="mt-header">
-        <div className="mt-header-left">
-          {
-            showBack && <a className="mt-header-back" href="javascript:;" onClick={ this.goBackEv }>
-            <i className="iconfont icon-xiangzuo mt-header-back-icon"></i><span className="mt-header-back-text">{ backText }</span></a>
-          }
-          { left }
+      <div className="mt-header-wrap">
+        <div className="mt-header-inner">
+          <div className="mt-header-left">
+            {
+              showBack && <a className="mt-header-back" href="javascript:;" onClick={ this.goBackEv }>
+              <i className="iconfont icon-xiangzuo mt-header-back-icon"></i><span className="mt-header-back-text">{ backText }</span></a>
+            }
+            { left }
+          </div>
+          <h1 className="mt-header-title">{ title || children}</h1>
+          <div className="mt-header-right">
+            { right }
+            {showHome && <a className="iconfont icon-shouye mt-header-icon-home" href="javascript:;" onClick={ this.goHome }></a>}
+          </div>
+          <div className="mt-header-ink-bar mainbackground" style={ lineSty }></div>
         </div>
-        <h1 className="mt-header-title">{ title || children}</h1>
-        <div className="mt-header-right">
-          { right }
-          {showHome && <a className="iconfont icon-shouye mt-header-icon-home" href="javascript:;" onClick={ this.goHome }></a>}
-        </div>
-        <div className="mt-header-ink-bar mainbackground" style={ lineSty }></div>
       </div>
     )
   }
