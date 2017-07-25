@@ -36,9 +36,12 @@ var Header = React.createClass({
 
   render(){
     let {
-      title, leftSlot, rightSlot, showBack, showHome, backText,
+      title, left, right, showBack, showHome, backText, lineColor,
       children, className, ...others
     } = this.props;
+
+    let lineSty = {}
+    lineColor && ( lineSty.backgroundColor = lineColor )
 
     // 非浏览器不展示头
     if(isWechat || isAlipay) return null;
@@ -50,14 +53,14 @@ var Header = React.createClass({
             showBack && <a className="mt-header-back" href="javascript:;" onClick={ this.goBackEv }>
             <i className="iconfont icon-xiangzuo mt-header-back-icon"></i><span className="mt-header-back-text">{ backText }</span></a>
           }
-          { leftSlot }
+          { left }
         </div>
         <h1 className="mt-header-title">{ title || children}</h1>
         <div className="mt-header-right">
-          { rightSlot }
+          { right }
           {showHome && <a className="iconfont icon-shouye mt-header-icon-home" href="javascript:;" onClick={ this.goHome }></a>}
         </div>
-        <div className="mt-header-ink-bar mainbackground"></div>
+        <div className="mt-header-ink-bar mainbackground" style={ lineSty }></div>
       </div>
     )
   }
@@ -65,26 +68,28 @@ var Header = React.createClass({
 
 
 Header.propTypes = {
-  title: React.PropTypes.any.isRequired, // 标题，一般使用文本，更复杂的可使用jsx
-  leftSlot: React.PropTypes.any,         // 可自定义的左侧内容，一般使用文本，更复杂的可使用jsx
-  rightSlot: React.PropTypes.any,        // 可自定义的右侧内容一般使用文本，更复杂的可使用jsx
-  showBack: React.PropTypes.bool,        // 是否显示左侧的返回按钮
+  title: React.PropTypes.any.isRequired,
+  left: React.PropTypes.any,
+  right: React.PropTypes.any,
+  showBack: React.PropTypes.bool,
   backText: React.PropTypes.string,
-  showHome: React.PropTypes.bool,        // 是否显示右侧的首页图标
+  showHome: React.PropTypes.bool,
   homeUrl: React.PropTypes.string,
-  preventGoBack: React.PropTypes.bool,   //是否阻止返回
+  preventGoBack: React.PropTypes.bool,
+  lineColor: React.PropTypes.string,
 };
 
 Header.defaultProps = {
-  title:'',
+  title:'', // 标题，一般使用文本，更复杂的可使用jsx
   backText: '',
-  showBack: true,
-  showHome: true,
+  lineColor: '',
+  showBack: true,// 是否显示左侧的返回按钮
+  showHome: true,// 是否显示右侧的首页图标
   homeUrl: '',
   onClickBack: null,
-  preventGoBack: false,
-  leftSlot: '',
-  rightSlot: '',
+  preventGoBack: false,//是否阻止返回
+  left: '',// 可自定义的左侧内容，一般使用文本，更复杂的可使用jsx
+  right: '',// 可自定义的右侧内容一般使用文本，更复杂的可使用jsx
 };
 
 export default Header;

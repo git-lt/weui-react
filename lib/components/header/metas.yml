@@ -1,0 +1,40 @@
+props:
+  title:
+    type: Any
+    default: ''
+    desc: 标题，一般使用文本，更复杂的可使用jsx
+  backText:
+    type: String
+    default: ''
+    desc: 返回的内容文字
+  showBack:
+    type: Boolean
+    default: true
+    desc: 是否显示左侧的返回按钮
+  showHome:
+    type: Boolean
+    default: true
+    desc: 是否显示右侧的首页图标
+  homeUrl:
+    type: String
+    default: ''
+    desc: 跳转到首页的首页地址
+  preventGoBack:
+    type: Boolean
+    default: false,
+    desc: 是否阻止返回
+  left:
+    type: Any
+    default: ''
+    desc: 左侧的内容，可以是字符也可以是JSX
+  right:
+    type: Any
+    default: ''
+    desc: 右侧的内容，可以是字符也可以是JSX
+events:
+  onClickBack:
+    params: ''
+    desc: 点击返回时执行的事件，此时不会自动返回
+changes:
+  v0.1.8:
+    - [feature] 添加 `lineColor` 用于配置底边线颜色
