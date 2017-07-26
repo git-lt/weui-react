@@ -9,23 +9,23 @@ var Input = React.createClass({
     }
   },
 
-  changeEv(e){
+  onChange(e){
     const value = e.target.value;
     this.setState({ value })
     this.props.onChange && this.props.onChange(e, value)
   },
 
-  focusEv(e){
+  onFocus(e){
     const value = e.target.value
     this.props.onFocus && this.props.onFocus(e, value)
   },
 
-  blurEv(e){
+  onBlur(e){
     const value = e.target.value
     this.props.onBlur && this.props.onBlur(e, value)
   },
 
-  clickEv(e){
+  onClick(e){
     const value = e.target.value
     this.props.onClick && this.props.onClick(e, value)
   },
@@ -38,9 +38,21 @@ var Input = React.createClass({
     return <select className="weui-select" { ...options } >{ opts }</select>
   },
 
-  clickClearEv(){
+  clear(){
     this.setState({ value: '' });
     this.refs.ipt.getDOMNode().focus();
+  },
+
+  reset(value = ''){
+    this.setState({ value })
+  },
+
+  focus(){
+    this.refs.ipt.getDOMNode().focus();
+  },
+
+  blur(){
+    this.refs.ipt.getDOMNode().blur();
   },
 
   render(){
@@ -76,10 +88,10 @@ var Input = React.createClass({
         <div className="weui-cell__bd">
           {
             type !== 'select' && <input className="weui-input" ref="ipt"
-              onChange={ this.changeEv }
-              onFocus={ this.focusEv }
-              onBlur={ this.blurEv }
-              onClick={ this.clickEv }
+              onChange={ this.onChange }
+              onFocus={ this.onFocus }
+              onBlur={ this.onBlur }
+              onClick={ this.onClick }
               value={ value }
               {...options}
             />
@@ -87,7 +99,7 @@ var Input = React.createClass({
           { type === 'select' && this.renderSelect(options) }
         </div>
         <div className="weui-cell__ft">
-          {clear && <i className="weui-icon-clear" onClick={ this.clickClearEv }></i>}
+          {clear && <i className="weui-icon-clear" onClick={ this.clear }></i>}
           {showWarn && showWarnIcon && <i className="weui-icon-warn"></i>}
           { right }
       </div>
@@ -122,6 +134,7 @@ Input.propTypes = {
   selectOptions: React.PropTypes.array,
   selectedValue: React.PropTypes.any,
 };
+
 Input.defaultProps = {
   type: 'text',             // text,number,password,tel,select
   right: null,              // 右侧的自定义内容，如验证码图片，发送验证码按钮等
