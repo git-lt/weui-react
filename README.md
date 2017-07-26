@@ -3,7 +3,7 @@
 - 基于 [WeUI v1.1.2](https://github.com/weui/weui) 及 [React 0.13.3](https://github.com/facebook/react/tree/v0.13.3)
 - 依赖 [pubsub-js](https://www.npmjs.com/package/pubsub-js)
 
-[文档 完善中](http://doc.liutao.pw/)
+[在线文档](http://doc.liutao.pw/)
 
 ### 重要
 **该UI组件库使用的是老版本的 0.13.3 的 React 库，由于老版与新版 React 存在很多不兼容的 API，所以该库也不兼容新版 React，如果你希望使用该库，请自行下载源码，重新调整编写，主要兼容性在于老版自动绑定了组件 this 的上下文，而新版需要手动绑定**
