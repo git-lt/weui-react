@@ -1,0 +1,63 @@
+importNamer: 'Swiper SwiperItem'
+items:
+  - swiper
+  - swiper-item
+swiper:
+  props:
+    list:
+      type: Array
+      desc: '图片数据'
+    direction:
+      type: String
+      default: 'horizontal'
+      desc: '滚动方向 vertical/horizontal'
+    showDots:
+      type: Boolean
+      default: true
+      desc: 显示点
+    showDescMask:
+      type: Boolean
+      default: true
+      desc: 是否显示遮罩层
+    dotsPosition:
+      type: String
+      default: 'right'
+      desc: '点的位置，left/center/right'
+    dotsClass:
+      type: String
+      default: ''
+      desc: 点容器的样式类
+    auto:
+      type: Boolean
+      default: false
+      desc: 是否自动播放
+    loop:
+      type: Boolean
+      default: false
+      desc: 是否循环播放
+    interval:
+      type: Number
+      default: 3000
+      desc: 循环的时间
+    threshold:
+      type: Number
+      default: 50
+      desc: 滑动多少距离时才开始滚动
+    duration:
+      type: Number
+      default: 300
+    height:
+      type: String
+      default: 180
+      desc: 高度
+    aspectRatio:
+      type: Number
+      default: 0
+      desc: 宽高比
+    minMovingDistance:
+      type: Number
+      default: 0
+      desc: '滚动多少距离时，才开始切换'
+  events:
+    onChange:
+      desc: 切换后的回调

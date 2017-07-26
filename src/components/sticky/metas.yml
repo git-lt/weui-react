@@ -1,0 +1,12 @@
+props:
+  scrollBox:
+    type: 'DOM Object'
+    desc: '滚动容器Dom对象'
+  offset:
+    type: Number
+    default: 0
+    desc: '滚动时，fixed定位距离顶部的高度'
+  checkStickySupport:
+    type: Boolean
+    default: true
+    desc: '检查是否支持css3的 sticky 样式，如果为 false，则不检查使用fixed定位'

@@ -1,0 +1,24 @@
+props:
+  show:
+    type: Boolean
+    default: false
+    desc: '显示隐藏，由外部控制'
+  position:
+    type: String
+    default: center
+    desc: 'top/left/bottom/center'
+  animate:
+    type: String
+    default: 'slide-in-top'
+    desc: '居中显示时的动画，slide-in-top / slide-in-bottom / zoom-in'
+  closeByMask:
+    type: Boolean
+    default: true
+    desc: 是否可以点击遮罩关闭
+events:
+  onClose:
+    desc: '关闭事件，组件关闭调用这个事件'
+  onShow:
+    desc: '显示之后的回调'
+  onHide:
+    desc: '关闭之后的回调'

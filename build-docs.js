@@ -54,8 +54,9 @@ let main = {
 
       files.forEach(function(file){
         let fileInfo = getFileInfo(file);
-
+        // console.log(fileInfo.fileName)
         let metas = yaml.safeLoad(fileInfo.content);
+        if(!metas) return;
 
         if(Array.isArray(metas.items)){
           let newMetas = {isItems: true, items:[], comName: fileInfo.comName, fileName: fileInfo.fileName};
@@ -63,6 +64,7 @@ let main = {
           metas.items.forEach(v=>{
             let t = {};
             t = metas[v];
+            if(!t) return;
             t.comName = PascalCase(v);
             t.fileName = v;
 

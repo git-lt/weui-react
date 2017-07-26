@@ -1,0 +1,4 @@
+props:
+  text:
+    type: 'Any'
+    desc: '组标题，一般使用文本，更复杂的可使用jsx'

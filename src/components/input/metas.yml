@@ -1,0 +1,78 @@
+props:
+  type:
+    type: String
+    default: text
+    desc: 'text,number,password,tel,select'
+  right:
+    type: Any
+    desc: '右侧的自定义内容，如验证码图片，发送验证码按钮等'
+  label:
+    type: Any
+  showClear:
+    type: Boolean
+    default: false
+    desc: 输入时是否显示清除
+  vcode:
+    type: Boolean
+    default: false
+    desc: 是否是验证码输入
+  labelAlign:
+    type: String
+  focusInput:
+    type: String
+    desc: 当前聚焦的input的stateName
+  name:
+    type: String
+  errorInput:
+    type: String
+    desc: 需要显示错误的input的stateName
+  value:
+    type: Any
+  showWarnIcon:
+    type: Boolean
+    default: false
+    desc: '是否显示错误提示图标，有时输入框太小，不需要显示icon'
+  readOnly:
+    type: Boolean
+    default: false
+  disabled:
+    type: Boolean
+    default: false
+  placeholder:
+    type: String
+  autoComplete:
+    type: String
+    default: 'off'
+    desc: 输入提示
+  maxLength:
+    type: String
+    default: '999'
+    desc: 最多输入的字符数
+  debounce:
+    type: Number
+  selectOptions:
+    type: Array
+    default: []
+    desc: "为select时的数据配置[{vlaue:'', text:''}]"
+  selectedValue:
+    type: Any
+    desc: 为select时选中的值
+events:
+  onChange:
+    desc: 'input 原生事件'
+  onFocus:
+    desc: 'input 原生事件'
+  onBlur:
+    desc: 'input 原生事件'
+  onClick:
+    desc: 'input 原生事件'
+methods:
+  clear:
+    desc: '清空 input 的value'
+  blur:
+    desc: 失入焦点
+  focus:
+    desc: '使 input 获取焦点'
+  reset:
+    params: '`(value)`'
+    desc: '传入 `value` 重新设置 `input` 的值'

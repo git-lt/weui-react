@@ -38,7 +38,7 @@ var Demo = React.createClass({
           </Group>
 
           <Group title="加载指示[ 只有loading需要手动关闭，其它都是自动关闭]">
-            <Cell label="toast.loading(...)" desc="正在加载" onClick={()=> {toast.loading('正在加载'); setTimeout(toast.hide, 2000); }} />
+            <Cell label="toast.loading(...)" desc="正在加载" onClick={()=> {toast.loading('正在加载'); setTimeout(toast.hide, 200000); }} />
           </Group>
 
           <Message/>

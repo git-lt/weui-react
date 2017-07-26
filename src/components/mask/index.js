@@ -19,7 +19,11 @@ var Mask = React.createClass({
 })
 
 
-Mask.propTypes = { transparent: React.PropTypes.bool };
-Mask.defaultProps = { transparent: false };
+Mask.propTypes = {
+  transparent: React.PropTypes.bool
+};
+Mask.defaultProps = {
+  transparent: false 
+};
 
 export default Mask

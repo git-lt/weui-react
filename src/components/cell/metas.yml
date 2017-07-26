@@ -1,0 +1,27 @@
+tips:
+  - '该组件为 `Group` 的子组件，必需结合 `Group` 组件使用'
+props:
+  label:
+    type: any
+    default: ''
+    desc: '标题文本，一般使用文本，更复杂的可使用jsx'
+  desc:
+    type: any
+    default: ''
+    desc: '描述文本，一般使用文本，更复杂的可使用jsx'
+  subDesc:
+    type: any
+    default: ''
+    desc: '副描述文本，一般使用文本，更复杂的可使用jsx'
+  icon:
+    type: any
+    default: ''
+    desc: '图标，一般使用jsx `<i className="icon icon-left" />`'
+  href:
+    type: String
+    default: ''
+    desc: '链接地址'
+  isLink:
+    type: Boolean
+    default: ''
+    desc: '是否是链接，如果 `href` 有值，则 `isLink` 自动为 `true`, 显示箭头'

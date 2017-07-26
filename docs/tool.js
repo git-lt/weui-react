@@ -12,12 +12,14 @@ const tool = {
         doc += this.renderTips(v);
         doc += this.renderProps(v);
         doc += this.renderEvents(v);
+        doc += this.renderMethods(v);
       })
     }else{
       doc += this.renderImport(meta);
       doc += this.renderTips(meta);
       doc += this.renderProps(meta);
       doc += this.renderEvents(meta);
+      doc += this.renderMethods(meta);
     }
 
     return doc;
@@ -82,6 +84,23 @@ const tool = {
     doc += props.join('\n')
     return doc;
   },
+
+  renderMethods: function(meta){
+    let doc = '';
+    if(!meta.methods) return doc;
+
+    doc += `\n<span class="mt-props-title">Methods</span>\n\n`;
+    doc += `| name  | params | version | description |\n`;
+    doc += `|-------|--------|---------|-------------|\n`;
+
+    let props = [];
+    for(let k in meta.methods){
+      let t = meta.methods[k];
+      props.push('|'+[k, t.params||'', t.version||'', t.desc||'' ].join('|')+'|')
+    }
+    doc += props.join('\n')
+    return doc;
+  }
 }
 
 module.exports = tool

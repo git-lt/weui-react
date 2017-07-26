@@ -1,0 +1,19 @@
+props:
+  title:
+    type: String
+    default: ''
+    desc: '标题 一般使用文本，更复杂的可使用jsx'
+  labelWidth:
+    type: String
+    default: ''
+    desc: '子元素 label 宽度'
+  labelAlign:
+    type: String
+    default: ''
+    desc: '子元素 label 对齐方式'
+  labelMarginRight:
+    type: String
+    desc: '子元素 label 右边距'
+  marginTop:
+    type: String
+    desc: '分组的上边距，在没有 title 时有效'

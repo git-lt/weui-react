@@ -2,7 +2,7 @@ props:
   title:
     type: Any
     default: ''
-    desc: 标题，一般使用文本，更复杂的可使用jsx
+    desc: '标题，一般使用文本，更复杂的可使用jsx'
   backText:
     type: String
     default: ''
@@ -26,16 +26,16 @@ props:
   left:
     type: Any
     default: ''
-    desc: 左侧的内容，可以是字符也可以是JSX
+    desc: '左侧的内容，可以是字符也可以是JSX'
   right:
     type: Any
     default: ''
-    desc: 右侧的内容，可以是字符也可以是JSX
+    desc: '右侧的内容，可以是字符也可以是JSX'
 
 events:
   onClickBack:
     params: ''
-    desc: 点击返回时执行的事件，此时不会自动返回
+    desc: '点击返回时执行的事件，此时不会自动返回'
 
 changes:
   v0.1.9:

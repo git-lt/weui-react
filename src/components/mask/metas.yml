@@ -1,0 +1,5 @@
+props:
+  transparent:
+    type: Boolean
+    default: false
+    desc: 是否是透明的

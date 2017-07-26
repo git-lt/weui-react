@@ -1,0 +1,15 @@
+props:
+  label:
+    type: String
+    default: ''
+    desc: 标题
+  value:
+    type: String
+    default: ''
+    desc: 一般显示总金额
+  items:
+    type: Array
+    desc: "键值对数组 [{label: '', value:''}]"
+  buttons:
+    type: Array
+    desc: "按钮配置数组 [{label: '', onClick:, type:'primary/default'}]"
