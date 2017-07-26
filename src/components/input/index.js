@@ -40,11 +40,13 @@ var Input = React.createClass({
 
   clear(){
     this.setState({ value: '' });
+    this.props.onChange && this.props.onChange(null, value);
     this.refs.ipt.getDOMNode().focus();
   },
 
   reset(value = ''){
     this.setState({ value })
+    this.props.onChange && this.props.onChange(null, value);
   },
 
   focus(){
