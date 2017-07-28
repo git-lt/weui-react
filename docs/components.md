@@ -341,6 +341,89 @@ import { Offcanvas } from 'mt-weui-react'
 |onShow|||显示之后的回调|
 |onHide|||关闭之后的回调|
 ----
+### <span class="mt-component-name">Picker</span>
+<span class="mt-component-link"><a href="#" router-link="/demos/picker">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/picker" target="_bank">组件源码</a></span>
+``` js
+import { Picker } from 'mt-weui-react'
+```
+
+<span class="mt-props-title">Props</span>
+
+| name  | type | default | version | description |
+|-------|------|---------|---------|-------------|
+|value|Array / String|||选中的值|
+|columns|Number|||当数据是联动的，必须设置展示列数|
+|columnWidth|Array|||列的宽度，默认自适应宽度，不需要设置最后一列|
+|data|Array|||选择器的数据，可以是
+```
+['1','2','3']
+[['2001','2002','2003'],['1','2','3'],['11','12','13']]
+[{
+  name: '中国',
+  value: 'china',
+  parent: 0
+}, {
+  name: '美国',
+  value: 'USA',
+  parent: 0
+}, {
+  name: '广东',
+  value: 'china001',
+  parent: 'china'
+}, {
+  name: '广西',
+  value: 'china002',
+  parent: 'china'
+}, {
+  name: '美国001',
+  value: 'usa001',
+  parent: 'USA'
+}, {
+  name: '美国002',
+  value: 'usa002',
+  parent: 'USA'
+}, {
+  name: '广州',
+  value: 'gz',
+  parent: 'china001'
+}, {
+  name: '深圳',
+  value: 'sz',
+  parent: 'china001'
+}, {
+  name: '广西001',
+  value: 'gx001',
+  parent: 'china002'
+}, {
+  name: '广西002',
+  value: 'gx002',
+  parent: 'china002'
+}, {
+  name: '美国001_001',
+  value: '0003',
+  parent: 'usa001'
+}, {
+  name: '美国001_002',
+  value: '0004',
+  parent: 'usa001'
+}, {
+  name: '美国002_001',
+  value: '0005',
+  parent: 'usa002'
+}, {
+  name: '美国002_002',
+  value: '0006',
+  parent: 'usa002'
+}]
+```
+|
+
+<span class="mt-props-title">Events</span>
+
+| name  | params | version | description |
+|-------|--------|---------|-------------|
+|onChage|(currentValues)||选择数据变化时，返回选择的数据|
+----
 ### <span class="mt-component-name">Sticky</span>
 <span class="mt-component-link"><a href="#" router-link="/demos/sticky">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/sticky" target="_bank">组件源码</a></span>
 ``` js

@@ -1,0 +1,36 @@
+props:
+  disabled:
+    type: Boolean
+    default: false
+    desc: 是否禁用
+  type:
+    type: String
+    default: 'checkbox'
+    desc: '类型：checbox、radio'
+  shape:
+    type: String
+    default: 'circle'
+    desc: '表现形状，三种形状：rect、rect-fill、circle-fill'
+  position:
+    type: String
+    default: 'right'
+    desc: 'checkbox 的对齐方式，默认label在右，checkbox在左'
+  data:
+    type: Array
+    desc: "List数据：[{id:1, text:'a'}, {id:2, text:'b'}]"
+  name:
+    type: String
+    default: ''
+    desc: 'input的 name 值'
+  checkedItems:
+    type: Array
+    default: '[]'
+    desc: '当前选中项的 value 组成的数组'
+  disableItems:
+    type: Array
+    default: '[]'
+    desc: '当前禁用项的 vaLue 组成的数组'
+events:
+  onClick:
+    params: ''
+    desc: '点击时的回调函数'

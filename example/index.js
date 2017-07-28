@@ -19,6 +19,7 @@ import Textarea from './pages/textarea'
 import Sticky from './pages/sticky'
 import Offcanvas from './pages/offcanvas'
 import FormPreview from './pages/form-preview'
+import Picker from './pages/picker'
 
 export {
     Home,
@@ -42,4 +43,5 @@ export {
     Sticky,
     Offcanvas,
     FormPreview,
+    Picker,
 }

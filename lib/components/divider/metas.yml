@@ -1,0 +1,5 @@
+props:
+  text:
+    type: 'Any'
+    default: ''
+    desc: '显示文本，一般使用文本，更复杂的可使用jsx'

@@ -11,7 +11,7 @@ const { DefaultRoute, Route, RouteHandler } = Router
 import {
   Home, Divider, Badge, Dialog, Toast, Button, Header,
   Checkbox, Flex, Grid, Msg, Input, Swiper, Switch, Tab,
-  Tip, Textarea, Sticky, Offcanvas, FormPreview,
+  Tip, Textarea, Sticky, Offcanvas, FormPreview, Picker,
 } from './index'
 
 let App = React.createClass({
@@ -46,6 +46,8 @@ let routes = (
     <Route name="swiper" handler={ Swiper }/>
     <Route name="switch" handler={ Switch }/>
     <Route name="form-preview" handler={ FormPreview }/>
+    <Route name="picker" handler={ Picker }/>
+    
     <DefaultRoute handler={ Home }/>
   </Route>
 )

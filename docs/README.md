@@ -8,6 +8,7 @@ title: 首页
 - 依赖 [pubsub-js](https://www.npmjs.com/package/pubsub-js)
 
 ### 说明
+
 **该UI组件库使用的是老版本的 0.13.3 的 React 库，由于老版与新版 React 存在很多不兼容的 API，所以该库也不兼容新版 React，如果你希望使用该库，请自行下载源码，重新调整编写，主要兼容性在于老版自动绑定了组件 this 的上下文，而新版需要手动绑定**
 
 ### 提醒
@@ -62,7 +63,7 @@ ReactDOM.render((
 import Button from 'mt-weui-react/lib/components/button'
 ```
 
-### 使用Babel插件，编译成上面的方式
+### 使用Babel插件
 
 安装 [babel-plugin-component](https://github.com/QingWei-Li/babel-plugin-component) babel插件
 

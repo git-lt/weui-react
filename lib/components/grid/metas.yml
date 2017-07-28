@@ -1,0 +1,15 @@
+importName: 'Grid GridItem'
+items:
+  - grid
+  - grid-item
+grid-item:
+  props:
+    label:
+      type: Any
+      desc: 格子中显示的标题
+    icon:
+      type: Any
+      desc: 格子中显示的图标
+    link:
+      type: String
+      desc: 点击时的链接

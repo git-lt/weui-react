@@ -29,6 +29,7 @@ let Home = React.createClass({
           <Cell label="Switch" desc="开关" icon={ checkedIcon } href={'/#/switch'}/>
           <Cell label="Input" desc="输入" icon={ checkedIcon } href={'/#/input'}/>
           <Cell label="Textarea" desc="多行文本输入" icon={ checkedIcon } href={'/#/textarea'}/>
+          <Cell label="Picker" desc="选择器" icon={ checkedIcon } href={'/#/picker'}/>
         </Group>
         <Group title="数据展示">
           <Cell label="FormPreview" desc="表单预览" icon={ checkedIcon } href={'/#/form-preview'}/>

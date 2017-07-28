@@ -21,6 +21,7 @@ import Tab from './components/tab'
 import Textarea from './components/textarea'
 import Tip from './components/tip'
 import FormPreview from './components/form-preview'
+import Picker from './components/picker'
 
 const FlexItem = Flex.FlexItem
 const GridItem = Grid.GridItem
@@ -60,4 +61,5 @@ export {
   Textarea,
   Tip,
   FormPreview,
+  Picker,
 };

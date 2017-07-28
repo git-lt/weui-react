@@ -1,0 +1,27 @@
+props:
+  show:
+    type: Boolean
+    default: false
+    desc: 显示隐藏
+  pageTitle:
+    type: String
+    desc: '页面标题, header 中的title'
+  title:
+    type: Any
+    desc: '标题, 可以是jsx'
+  desc:
+    type: Any
+    desc: '描述, 可以是jsx'
+  type:
+    type: String
+    default: 'success'
+    desc: '显示类型  sucess / error'
+  buttons:
+    type: Array
+    desc: 'Msg页面显示的Buttons按钮配置'
+  footerLinks:
+    type: Array
+    desc: "底部链接，[{ href:'', text:'' }]"
+  footerText:
+    type: String
+    desc: 底部文字

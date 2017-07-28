@@ -1,0 +1,21 @@
+props:
+  buttons:
+    type: Array
+    default: '[]'
+    desc: '对话框底部的操作按钮'
+  show:
+    type: Boolean
+    default: false
+    desc: '是否显示'
+  title:
+    type: String
+    desc: '标题'
+  message:
+    type: 'Any'
+    desc: '对话框的内容'
+events:
+  onShow:
+    params: ''
+    desc: 打开的回调
+  onClose:
+    desc: 关闭的回调

@@ -1,9 +1,10 @@
+importName: 'Tab TabItem'
 items:
   - tab
   - tab-item
 tab:
   tips:
-    - 需要和 `TabItem` 组件配合使用，`TabItem` 是 `Tab` 的子组件
+    - '需要和 `TabItem` 组件配合使用，`TabItem` 是 `Tab` 的子组件'
   props:
     bgColor:
       type: String
@@ -16,7 +17,7 @@ tab:
     lineLeft:
       type: String
       default: '0%'
-      desc: 指示线离左边的距离，由外部状态计算得来
+      desc: '指示线离左边的距离，由外部状态计算得来'
     lineHeight:
       type: String
       default: '2px'

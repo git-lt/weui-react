@@ -1,0 +1,22 @@
+props:
+  message:
+    type: Any
+    desc: '消息内容，可以是任意内容'
+  icon:
+    type: Any
+    desc: 消息提示图标
+  closable:
+    type: Boolean
+    desc: 是否显示关闭图标
+  duration:
+    type: Number
+    default: 0
+    desc: 指定时长之后自动关闭
+  type:
+    type: String
+    default: 'warning'
+    desc: '显示类型，warning/info/success/error/default'
+  show:
+    type: Boolean
+    default: true
+    desc: 是否显示

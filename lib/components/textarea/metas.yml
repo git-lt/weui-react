@@ -1,0 +1,23 @@
+props:
+  show:
+    type: Boolean
+    default: false
+    desc: 显示隐藏
+  value:
+    type: String
+    desc: Textarea中的值
+  maxLength:
+    type: String
+    desc: 最多可填写的字符数量
+  height:
+    type: String
+    default: '75px'
+    desc: 'Textarea的高度'
+  rows:
+    type: String
+    default: '3'
+    desc: 'Textarea的rows'
+  cols:
+    type: String
+    default: '30'
+    desc: 'Textarea的cols'

@@ -1,0 +1,4 @@
+importName: 'Message dialog toast'
+tips:
+  - "这是一个便捷插件，页面引用 `Message` 组件，使用 `dialog.show(...)` 与 `toast.show(..)` 来显示相应的组件"
+  - "`dialog` 与 `toast` 的配置，请查看相关文档"
