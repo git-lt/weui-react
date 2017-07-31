@@ -12,6 +12,7 @@ import {
   Home, Divider, Badge, Dialog, Toast, Button, Header,
   Checkbox, Flex, Grid, Msg, Input, Swiper, Switch, Tab,
   Tip, Textarea, Sticky, Offcanvas, FormPreview, Picker,
+  Previewer,
 } from './index'
 
 let App = React.createClass({
@@ -47,7 +48,8 @@ let routes = (
     <Route name="switch" handler={ Switch }/>
     <Route name="form-preview" handler={ FormPreview }/>
     <Route name="picker" handler={ Picker }/>
-    
+    <Route name="previewer" handler={ Previewer }/>
+
     <DefaultRoute handler={ Home }/>
   </Route>
 )

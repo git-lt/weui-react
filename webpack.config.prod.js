@@ -26,7 +26,7 @@ module.exports = {
                 test: /\.css/,
                 loader: ExtractTextPlugin.extract('style', 'css', 'postcss')
             }, {
-                test: /\.(png|jpg|svg)$/,
+                test: /\.(png|jpg|svg|gif)$/,
                 loader: 'url?limit=25000'
             }
         ]

@@ -126,7 +126,25 @@ import { Flex } from 'mt-weui-react'
 | name  | type | default | version | description |
 |-------|------|---------|---------|-------------|
 |gutter|Number|20||网格之间的间距|
-|options|String||||
+|options|String|||options为以下取值
+```
+row: 子元素行显示
+column: 子元素列显示
+center: 子元素水平垂直居中
+wrap: 子元素如果是有固定宽度或高度，超出换行显示
+main-start: 主轴起始对齐
+main-center: 主轴居中对齐
+main-end: 主轴末尾对齐
+maine-between: 主轴两端对齐
+main-around: 主轴散列对齐
+cross-start: 侧轴起始对齐
+cross-center: 侧轴居中对齐
+cross-end: 侧轴末尾对齐
+cross-between: 侧轴两端对齐
+cross-around: 侧轴散列对齐
+cross-stretch: 侧轴拉伸对齐
+```
+|
 
 <p><span class="mt-component-name">FlexItem</span></p>
 
@@ -138,7 +156,32 @@ import { FlexItem } from 'mt-weui-react'
 
 | name  | type | default | version | description |
 |-------|------|---------|---------|-------------|
-|options|String||||
+|options|String|||options为以下取值
+```
+flex
+start
+end
+center
+baseline
+stretch
+order1
+order2
+order3
+order4
+order5
+order6
+order7
+order8
+order9
+order10
+
+1/2
+1/3
+1/4
+1/5
+1/6
+```
+|
 
 ----
 ### <span class="mt-component-name">FormPreview</span>
@@ -355,7 +398,7 @@ import { Picker } from 'mt-weui-react'
 |columns|Number|||当数据是联动的，必须设置展示列数|
 |columnWidth|Array|||列的宽度，默认自适应宽度，不需要设置最后一列|
 |data|Array|||选择器的数据，可以是
-```
+``` javascript
 ['1','2','3']
 [['2001','2002','2003'],['1','2','3'],['11','12','13']]
 [{
@@ -423,6 +466,31 @@ import { Picker } from 'mt-weui-react'
 | name  | params | version | description |
 |-------|--------|---------|-------------|
 |onChage|(currentValues)||选择数据变化时，返回选择的数据|
+----
+### <span class="mt-component-name">Previewer</span>
+<span class="mt-component-link"><a href="#" router-link="/demos/previewer">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/previewer" target="_bank">组件源码</a></span>
+``` js
+import { Previewer } from 'mt-weui-react'
+```
+
+<span class="mt-props-title">Props</span>
+
+| name  | type | default | version | description |
+|-------|------|---------|---------|-------------|
+|list|Array|||图片列表|
+|options|Object|[object Object]||`photoswipe` 的设置|
+
+<span class="mt-props-title">Events</span>
+
+| name  | params | version | description |
+|-------|--------|---------|-------------|
+|onClose|||关闭的回调|
+<span class="mt-props-title">Methods</span>
+
+| name  | params | version | description |
+|-------|--------|---------|-------------|
+|show|(index)||图片的索引|
+|close|(index)||图片的索引|
 ----
 ### <span class="mt-component-name">Sticky</span>
 <span class="mt-component-link"><a href="#" router-link="/demos/sticky">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/sticky" target="_bank">组件源码</a></span>

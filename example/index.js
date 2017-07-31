@@ -20,6 +20,7 @@ import Sticky from './pages/sticky'
 import Offcanvas from './pages/offcanvas'
 import FormPreview from './pages/form-preview'
 import Picker from './pages/picker'
+import Previewer from './pages/previewer'
 
 export {
     Home,
@@ -44,4 +45,5 @@ export {
     Offcanvas,
     FormPreview,
     Picker,
+    Previewer,
 }

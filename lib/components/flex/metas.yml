@@ -10,7 +10,52 @@ flex:
       desc: 网格之间的间距
     options:
       type: String
+      desc: |
+        options为以下取值
+        ```
+        row: 子元素行显示
+        column: 子元素列显示
+        center: 子元素水平垂直居中
+        wrap: 子元素如果是有固定宽度或高度，超出换行显示
+        main-start: 主轴起始对齐
+        main-center: 主轴居中对齐
+        main-end: 主轴末尾对齐
+        maine-between: 主轴两端对齐
+        main-around: 主轴散列对齐
+        cross-start: 侧轴起始对齐
+        cross-center: 侧轴居中对齐
+        cross-end: 侧轴末尾对齐
+        cross-between: 侧轴两端对齐
+        cross-around: 侧轴散列对齐
+        cross-stretch: 侧轴拉伸对齐
+        ```
 flex-item:
   props:
     options:
       type: String
+      desc: |
+        options为以下取值
+        ```
+        flex
+        start
+        end
+        center
+        baseline
+        stretch
+        order1
+        order2
+        order3
+        order4
+        order5
+        order6
+        order7
+        order8
+        order9
+        order10
+
+        1/2
+        1/3
+        1/4
+        1/5
+        1/6
+        ```

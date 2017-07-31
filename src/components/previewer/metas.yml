@@ -1,0 +1,22 @@
+props:
+  list:
+    type: Array
+    default: []
+    desc: 图片列表
+  options:
+    type: Object
+    default: {}
+    desc: '`photoswipe` 的设置'
+events:
+  onClose:
+    desc: 关闭的回调
+methods:
+  show:
+    params: '(index)'
+    desc: 图片的索引
+  close:
+    params: '(index)'
+    desc: 图片的索引
+changes:
+  v0.1.15:
+    - '[feature] 新组件 图片查看器，点击放大查看图片'

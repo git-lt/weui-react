@@ -148,15 +148,26 @@ yarn run docs
 - [x] Textarea
 - [x] Tip
 - [x] FormPreviex
-
-- [ ] Picker
-- [ ] Number
-- [ ] Address
-- [ ] Range
+- [x] Picker
+- [x] Previewer
+- [ ] DateTimeView
+- [ ] DateTimeRange
 - [ ] Datetime
-- [ ] DatetimeRange
-- [ ] Calendar
-- [ ] Countdown
-- [ ] Progress
-- [ ] Geolocation
-- [ ] Scroller
+- [ ] Address
+- [ ] PopupPicker
+- [ ] Popup
+- [ ] PopupHeader
+- [ ] PopupRadio
+- [ ] Circle
+- [ ] Table
+- [ ] Marquee
+- [ ] Countup 数字显示
+- [ ] Clocker 倒计时
+- [ ] Actionsheet
+- [ ] Number 数字加减
+
+
+## 感谢
+
+- 本项目主要参考了 `weui` 官方的 [weui](https://github.com/weui/weui) 及 [react-weui](https://github.com/weui/react-weui/) 及 [Vux](https://github.com/airyland/vux)(Vue版本的WeUI)
+- Api风格与 vux 基本一致

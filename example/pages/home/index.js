@@ -38,8 +38,8 @@ let Home = React.createClass({
           <Cell label="Badge" desc="徽章" icon={ checkedIcon } href={'/#/badge'}/>
           <Cell label="Swiper" desc="滑动相册" icon={ checkedIcon } href={'/#/swiper'}/>
           <Cell label="Sticky" desc="滚动锁定" icon={ checkedIcon } href={'/#/sticky'}/>
+          <Cell label="Previewer" desc="图片查看器" icon={ checkedIcon } href={'/#/previewer'}/>
         </Group>
-
         <Group title="导航相关">
           <Cell label="Tab" desc="选项卡" icon={ checkedIcon } href={'/#/tab'}/>
         </Group>
