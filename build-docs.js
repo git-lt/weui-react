@@ -149,6 +149,13 @@ function buildChangesDoc(changes) {
   for(let v in sortData){
     doc += `\n## ${v}\n`;
     sortData[v].forEach(c=>{
+      c = c.replace(/\[feature\]/, '<span class="change-tag feature">feature</span>')
+        .replace(/\[fix\]/, '<span class="change-tag fix">fix</span>')
+        .replace(/\[new\]/, '<span class="change-tag new">new</span>')
+        .replace(/\[change\]/, '<span class="change-tag change">change</span>')
+        .replace(/\[enhange\]/, '<span class="change-tag enhange">enhange</span>')
+        .replace(/\[deprecated\]/, '<span class="change-tag deprecated">deprecated</span>');
+
       doc += `- ${c}\n`.replace(/(#\d+)/g, '<a href="https://github.com/git-lt/weui-react/issues/$1" target="_bank">$1<a>');
     })
   }
