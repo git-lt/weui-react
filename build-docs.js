@@ -110,6 +110,7 @@ main.run();
  */
 function buildDemoDoc(info) {
   let url = `http://aitter.oschina.io/#/${info.fileName}`
+  info.content = info.content.replace('../../../src', 'mt-weui-react')
   let doc = demoTpl.replace('$title',info.comName)
     .replace('$js', info.content)
     .replace('$path', info.fileName)
@@ -153,7 +154,7 @@ function buildChangesDoc(changes) {
         .replace(/\[fix\]/, '<span class="change-tag fix">fix</span>')
         .replace(/\[new\]/, '<span class="change-tag new">new</span>')
         .replace(/\[change\]/, '<span class="change-tag change">change</span>')
-        .replace(/\[enhange\]/, '<span class="change-tag enhange">enhange</span>')
+        .replace(/\[enhance\]/, '<span class="change-tag enhance">enhance</span>')
         .replace(/\[deprecated\]/, '<span class="change-tag deprecated">deprecated</span>');
 
       doc += `- ${c}\n`.replace(/(#\d+)/g, '<a href="https://github.com/git-lt/weui-react/issues/$1" target="_bank">$1<a>');

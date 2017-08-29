@@ -23,11 +23,14 @@ import Tip from './components/tip'
 import FormPreview from './components/form-preview'
 import Picker from './components/picker'
 import Previewer from './components/previewer'
+import Marquee from './components/marquee'
+import Circle from './components/circle'
 
 const FlexItem = Flex.FlexItem
 const GridItem = Grid.GridItem
 const SwiperItem = Swiper.SwiperItem
 const TabItem = Tab.TabItem
+const MarqueeItem = Marquee.MarqueeItem
 const dialog = Message.dialog
 const toast = Message.toast
 
@@ -64,4 +67,7 @@ export {
   FormPreview,
   Picker,
   Previewer,
+  Marquee,
+  MarqueeItem,
+  Circle,
 };

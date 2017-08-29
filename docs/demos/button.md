@@ -15,7 +15,7 @@
 
 ``` javascript
 import React from 'react'
-import { Button, GroupTitle } from '../../../src'
+import { Button, GroupTitle } from 'mt-weui-react'
 import Page from '../../component/page'
 
 var DemoButton = React.createClass({

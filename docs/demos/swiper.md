@@ -15,7 +15,7 @@
 
 ``` javascript
 import React from 'react'
-import { Swiper, SwiperItem, Button, GroupTitle } from '../../../src'
+import { Swiper, SwiperItem, Button, GroupTitle } from 'mt-weui-react'
 import Page from '../../component/page'
 import './index.less'
 

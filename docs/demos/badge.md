@@ -15,7 +15,7 @@
 
 ``` javascript
 import React from 'react'
-import { Group, Cell, Badge } from '../../../src'
+import { Group, Cell, Badge } from 'mt-weui-react'
 import Page from '../../component/page'
 
 const msgIcon = (<div style={{position:'relative', marginRight: '10px'}}>

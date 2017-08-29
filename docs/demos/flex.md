@@ -15,7 +15,7 @@
 
 ``` javascript
 import React from 'react'
-import { Flex, FlexItem } from '../../../src'
+import { Flex, FlexItem } from 'mt-weui-react'
 import Page from '../../component/page'
 import './index.less'
 

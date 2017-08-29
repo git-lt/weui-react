@@ -1,0 +1,24 @@
+props:
+  strokeWidth:
+    type: Number
+    default: 1
+    desc: 进度圆环的宽度
+  strokeColor:
+    type: String
+    default: '#37c7fa'
+    desc: 进度圆环的颜色
+  trailWidth:
+    type: Number
+    default: 1
+    desc: 进度圆环的背景宽度
+  trailColor:
+    type: String
+    default: '#d9d9d9'
+    desc: 进度圆环的背景颜色
+  percent:
+    type: Number
+    default: 0
+    desc: 进度数值
+changes:
+  v0.1.16:
+    - '[new] 新的图表组件 进度圆环展示'

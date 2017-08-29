@@ -48,6 +48,10 @@ amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
 
+amfe-env@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmjs.org/amfe-env/-/amfe-env-2.0.0.tgz#8138bc361acf2e69cbc5a499df2b43667f0f9baf"
+
 ansi-align@^1.1.0:
   version "1.1.0"
   resolved "https://registry.npmjs.org/ansi-align/-/ansi-align-1.1.0.tgz#2f0c1658829739add5ebb15e6b0c6e3423f016ba"

@@ -15,7 +15,7 @@
 
 ``` javascript
 import React from 'react'
-import { Tab, TabItem, Sticky  } from '../../../src'
+import { Tab, TabItem, Sticky  } from 'mt-weui-react'
 import Page from '../../component/page'
 
 var Demo = React.createClass({

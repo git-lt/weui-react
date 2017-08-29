@@ -3,16 +3,13 @@ import Router from 'react-router'
 import FastClick from 'fastclick'
 import "babel-polyfill"
 
-// import '../lib/base.css'
-// import '../lib/weui.css'
-
 const { DefaultRoute, Route, RouteHandler } = Router
 
 import {
   Home, Divider, Badge, Dialog, Toast, Button, Header,
   Checkbox, Flex, Grid, Msg, Input, Swiper, Switch, Tab,
   Tip, Textarea, Sticky, Offcanvas, FormPreview, Picker,
-  Previewer,
+  Previewer, Marquee, Circle,
 } from './index'
 
 let App = React.createClass({
@@ -33,7 +30,6 @@ let routes = (
     <Route name="toast" handler={ Toast }/>
     <Route name="button" handler={ Button }/>
     <Route name="header" handler={ Header }/>
-
     <Route name="input" handler={ Input }/>
     <Route name="checkbox" handler={ Checkbox }/>
     <Route name="grid" handler={ Grid }/>
@@ -49,7 +45,8 @@ let routes = (
     <Route name="form-preview" handler={ FormPreview }/>
     <Route name="picker" handler={ Picker }/>
     <Route name="previewer" handler={ Previewer }/>
-
+    <Route name="marquee" handler={ Marquee }/>
+    <Route name="circle" handler={ Circle }/>
     <DefaultRoute handler={ Home }/>
   </Route>
 )

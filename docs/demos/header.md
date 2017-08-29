@@ -15,7 +15,7 @@
 
 ``` javascript
 import React from 'react'
-import { Message, dialog, toast, Header } from '../../../src'
+import { Message, dialog, toast, Header } from 'mt-weui-react'
 import Page from '../../component/page'
 
 var Demo = React.createClass({

@@ -15,7 +15,7 @@
 
 ``` javascript
 import React from 'react'
-import { Previewer  } from '../../../src'
+import { Previewer  } from 'mt-weui-react'
 import Page from '../../component/page'
 
 var Demo = React.createClass({

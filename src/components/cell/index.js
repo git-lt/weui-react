@@ -7,7 +7,7 @@ var Cell = React.createClass({
     !!href && (window.location.href = this.props.href);
   },
   render(){
-    let { label, desc, subDesc, icon, href, isLink, className, ...others } = this.props;
+    let { label, desc, subDesc, icon, href, isLink, className, children, ...others } = this.props;
 
     !!href && ( isLink = true )
 
@@ -27,7 +27,7 @@ var Cell = React.createClass({
           <p>{ label }</p>
           { !!subDesc && <span>{ subDesc }</span> }
         </div>
-        <div className="weui-cell__ft">{ desc }</div>
+        <div className="weui-cell__ft">{ desc || children }</div>
       </a>
     )
   }

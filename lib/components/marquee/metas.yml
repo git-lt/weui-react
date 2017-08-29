@@ -1,0 +1,25 @@
+importName: 'Marquee MarqueeItem'
+items:
+  - marquee
+  - marquee-item
+marquee:
+  props:
+    interval:
+      type: Number
+      default: 2000
+      desc: 切换时间间隙
+    duration:
+      type: Number
+      default: 200
+      desc: 切换动画时间
+    direction:
+      type: String
+      default: up
+      desc: '切换方向: up/down'
+  methods:
+    refresh:
+      desc: 刷新列表数据
+  changes:
+    v0.1.16:
+      - '[new] 新组件 跑马灯消息展示'
+marquee-item:

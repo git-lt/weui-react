@@ -15,7 +15,7 @@
 
 ``` javascript
 import React from 'react'
-import { Group, Cell, Header } from '../../../src'
+import { Group, Cell, Header } from 'mt-weui-react'
 import Page from '../../component/page'
 import { Link } from 'react-router'
 
@@ -55,6 +55,8 @@ let Home = React.createClass({
           <Cell label="Swiper" desc="滑动相册" icon={ checkedIcon } href={'/#/swiper'}/>
           <Cell label="Sticky" desc="滚动锁定" icon={ checkedIcon } href={'/#/sticky'}/>
           <Cell label="Previewer" desc="图片查看器" icon={ checkedIcon } href={'/#/previewer'}/>
+          <Cell label="Marquee" desc="跑马灯" icon={ checkedIcon } href={'/#/marquee'}/>
+          <Cell label="Circle" desc="圆环进度" icon={ checkedIcon } href={'/#/circle'}/>
         </Group>
         <Group title="导航相关">
           <Cell label="Tab" desc="选项卡" icon={ checkedIcon } href={'/#/tab'}/>

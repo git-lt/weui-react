@@ -1,6 +1,6 @@
-import React from 'react';
-import classNames from 'classnames';
-import './index.less';
+import React from 'react'
+import classNames from 'classnames'
+import './index.less'
 
 var Mask = React.createClass({
   render(){
@@ -23,7 +23,7 @@ Mask.propTypes = {
   transparent: React.PropTypes.bool
 };
 Mask.defaultProps = {
-  transparent: false 
+  transparent: false
 };
 
 export default Mask

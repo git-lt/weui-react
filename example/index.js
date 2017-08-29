@@ -21,6 +21,8 @@ import Offcanvas from './pages/offcanvas'
 import FormPreview from './pages/form-preview'
 import Picker from './pages/picker'
 import Previewer from './pages/previewer'
+import Marquee from './pages/marquee'
+import Circle from './pages/circle'
 
 export {
     Home,
@@ -46,4 +48,6 @@ export {
     FormPreview,
     Picker,
     Previewer,
+    Marquee,
+    Circle,
 }

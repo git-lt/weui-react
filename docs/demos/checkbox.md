@@ -15,7 +15,7 @@
 
 ``` javascript
 import React from 'react'
-import { Checkbox } from '../../../src'
+import { Checkbox } from 'mt-weui-react'
 import Page from '../../component/page'
 
 var Demo = React.createClass({

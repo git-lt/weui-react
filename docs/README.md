@@ -11,10 +11,15 @@ title: 首页
 
 **该UI组件库使用的是老版本的 0.13.3 的 React 库，由于老版与新版 React 存在很多不兼容的 API，所以该库也不兼容新版 React，如果你希望使用该库，请自行下载源码，重新调整编写，主要兼容性在于老版自动绑定了组件 this 的上下文，而新版需要手动绑定**
 
-### 提醒
+### 样式及适配
 - weui的样式请自行在项目中引用，该库并没有引用
 - 组件中使用了 `rem` 单位，参考比例是 375屏宽下，根字体大小为 `100px`
 
+`index.html` 的head中加入下面这段JS，以便动态计算 `REM`
+
+```javascript
+(function(d,c){var e=d.documentElement,a="orientationchange" in window?"orientationchange":"resize",b=function(){var h=e.clientWidth||320;var f=e.classList;var g=h<320?320:h>450?450:h;var i=100*(g/375);c.REM=i;e.style.fontSize=i+"px";e.style.opacity=1};e.style.opacity=0;c.addEventListener(a,b,false);d.addEventListener("DOMContentLoaded",b,false);c.rem2px=function(f){return parseFloat(f)*c.REM};c.px2rem=function(f){return parseFloat(f)/c.REM}})(document,window);
+```
 ## 示例Demo
 
 <img src="http://7xi480.com1.z0.glb.clouddn.com/%E5%B1%8F%E5%B9%95%E5%BF%AB%E7%85%A7%202017-07-19%20%E4%B8%8B%E5%8D%886.06.36.png" width="300" alt="">
@@ -153,21 +158,21 @@ yarn run docs
 - [x] FormPreviex
 - [x] Picker
 - [x] Previewer
+- [x] Circle
+- [x] Marquee
 - [ ] DateTimeView
 - [ ] DateTimeRange
 - [ ] Datetime
 - [ ] Address
 - [ ] PopupPicker
-- [ ] Popup
 - [ ] PopupHeader
 - [ ] PopupRadio
-- [ ] Circle
 - [ ] Table
-- [ ] Marquee
 - [ ] Countup 数字显示
 - [ ] Clocker 倒计时
 - [ ] Actionsheet
 - [ ] Number 数字加减
+
 
 
 ## 感谢

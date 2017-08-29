@@ -15,7 +15,7 @@
 
 ``` javascript
 import React from 'react'
-import { Picker, GroupTitle  } from '../../../src'
+import { Picker, GroupTitle  } from 'mt-weui-react'
 import chinaAddress from '../../../src/components/picker/china_address.json'
 
 var Demo = React.createClass({

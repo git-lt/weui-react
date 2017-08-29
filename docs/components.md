@@ -78,6 +78,23 @@ import { Checkbox } from 'mt-weui-react'
 |-------|--------|---------|-------------|
 |onClick|||点击时的回调函数|
 ----
+### <span class="mt-component-name">Circle</span>
+<span class="mt-component-link"><a href="#" router-link="/demos/circle">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/circle" target="_bank">组件源码</a></span>
+``` js
+import { Circle } from 'mt-weui-react'
+```
+
+<span class="mt-props-title">Props</span>
+
+| name  | type | default | version | description |
+|-------|------|---------|---------|-------------|
+|strokeWidth|Number|1||进度圆环的宽度|
+|strokeColor|String|#37c7fa||进度圆环的颜色|
+|trailWidth|Number|1||进度圆环的背景宽度|
+|trailColor|String|#d9d9d9||进度圆环的背景颜色|
+|percent|Number|||进度数值|
+
+----
 ### <span class="mt-component-name">Dialog</span>
 <span class="mt-component-link"><a href="#" router-link="/demos/dialog">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/dialog" target="_bank">组件源码</a></span>
 ``` js
@@ -319,6 +336,28 @@ import { Input } from 'mt-weui-react'
 |focus|||使 input 获取焦点|
 |reset|`(value)`||传入 `value` 重新设置 `input` 的值|
 ----
+### <span class="mt-component-name">Marquee</span>
+<span class="mt-component-link"><a href="#" router-link="/demos/marquee">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/marquee" target="_bank">组件源码</a></span>
+<p><span class="mt-component-name">Marquee</span></p>
+
+``` js
+import { Marquee } from 'mt-weui-react'
+```
+
+<span class="mt-props-title">Props</span>
+
+| name  | type | default | version | description |
+|-------|------|---------|---------|-------------|
+|interval|Number|2000||切换时间间隙|
+|duration|Number|200||切换动画时间|
+|direction|String|up||切换方向: up/down|
+
+<span class="mt-props-title">Methods</span>
+
+| name  | params | version | description |
+|-------|--------|---------|-------------|
+|refresh|||刷新列表数据|
+----
 ### <span class="mt-component-name">Mask</span>
 <span class="mt-component-link"><a href="#" router-link="/demos/mask">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/mask" target="_bank">组件源码</a></span>
 ``` js
@@ -375,6 +414,9 @@ import { Offcanvas } from 'mt-weui-react'
 |position|String|center||top/left/bottom/center|
 |animate|String|slide-in-top||居中显示时的动画，slide-in-top / slide-in-bottom / zoom-in|
 |closeByMask|Boolean|true||是否可以点击遮罩关闭|
+|hideMask|Boolean|||用于隐藏遮罩，使其透明|
+|height|String,|auto||用于从上或从下弹出时，设置弹出层的高度，一般为auto，可以使用百分比数值|
+|width|String,|auto||用于从左或从右弹出时，设置弹出层的宽度，一般为auto，可以使用百分比数值|
 
 <span class="mt-props-title">Events</span>
 
@@ -383,6 +425,7 @@ import { Offcanvas } from 'mt-weui-react'
 |onClose|||关闭事件，组件关闭调用这个事件|
 |onShow|||显示之后的回调|
 |onHide|||关闭之后的回调|
+|onFirstShow|||用于首次显示时的回调|
 ----
 ### <span class="mt-component-name">Picker</span>
 <span class="mt-component-link"><a href="#" router-link="/demos/picker">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/picker" target="_bank">组件源码</a></span>

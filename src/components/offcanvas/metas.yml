@@ -15,6 +15,18 @@ props:
     type: Boolean
     default: true
     desc: 是否可以点击遮罩关闭
+  hideMask:
+    type: Boolean
+    default: false
+    desc: '用于隐藏遮罩，使其透明'
+  height:
+    type: String,
+    default: auto
+    desc: '用于从上或从下弹出时，设置弹出层的高度，一般为auto，可以使用百分比数值'
+  width:
+    type: String,
+    default: auto
+    desc: '用于从左或从右弹出时，设置弹出层的宽度，一般为auto，可以使用百分比数值'
 events:
   onClose:
     desc: '关闭事件，组件关闭调用这个事件'
@@ -22,3 +34,12 @@ events:
     desc: '显示之后的回调'
   onHide:
     desc: '关闭之后的回调'
+  onFirstShow:
+    desc: '用于首次显示时的回调'
+changes:
+  v0.1.16:
+    - '[enhance] 添加 `hideMask` 用于控制遮罩层是否透明'
+    - '[enhance] 添加 `onFirstShow` 事件用于首次显示的回调'
+    - '[enhance] 添加 `height` 属性，用于设置从下或从下弹出时的固定高度'
+    - '[enhance] 添加 `width` 属性，用于设置从左或从右弹出时的固定宽度'
+    - '[enhance] 可以弹出多个叠加显示了'

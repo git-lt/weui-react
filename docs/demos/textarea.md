@@ -15,7 +15,7 @@
 
 ``` javascript
 import React from 'react'
-import { Textarea, Group } from '../../../src'
+import { Textarea, Group } from 'mt-weui-react'
 import Page from '../../component/page'
 // import Autosize from 'autosize' // http://www.jacklmoore.com/autosize/
 

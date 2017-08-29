@@ -15,7 +15,7 @@
 
 ``` javascript
 import React from 'react'
-import { Group, Cell, Switch } from '../../../src'
+import { Group, Cell, Switch } from 'mt-weui-react'
 import Page from '../../component/page'
 
 var Demo = React.createClass({

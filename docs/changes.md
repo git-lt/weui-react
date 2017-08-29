@@ -1,4 +1,14 @@
 
+## v0.1.16
+- Circle - <span class="change-tag new">new</span> 新的图表组件 进度圆环展示
+- Header - <span class="change-tag enhance">enhance</span> 使用amfe-env包来判断非webview才显示header
+- Marquee - <span class="change-tag new">new</span> 新组件 跑马灯消息展示
+- Offcanvas - <span class="change-tag enhance">enhance</span> 添加 `hideMask` 用于控制遮罩层是否透明
+- Offcanvas - <span class="change-tag enhance">enhance</span> 添加 `onFirstShow` 事件用于首次显示的回调
+- Offcanvas - <span class="change-tag enhance">enhance</span> 添加 `height` 属性，用于设置从下或从下弹出时的固定高度
+- Offcanvas - <span class="change-tag enhance">enhance</span> 添加 `width` 属性，用于设置从左或从右弹出时的固定宽度
+- Offcanvas - <span class="change-tag enhance">enhance</span> 可以弹出多个叠加显示了
+
 ## v0.1.15
 - Picker - <span class="change-tag new">new</span> 新组件 数据选择器
 - Previewer - <span class="change-tag new">new</span> 新组件 图片查看器，点击放大查看图片

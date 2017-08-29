@@ -1,5 +1,6 @@
 import React from 'react'
-import { isWechat, isAlipay } from '../../utils/mobile_detect'
+import { browser } from 'amfe-env'
+const isWebview = !!browser.isWebview
 import './index.less'
 
 var Header = React.createClass({
@@ -44,7 +45,7 @@ var Header = React.createClass({
     lineColor && ( lineSty.backgroundColor = lineColor )
 
     // 非浏览器不展示头
-    if(isWechat || isAlipay) return null;
+    if(!isWebview) return null;
 
     return(
       <div className="mt-header-wrap">
