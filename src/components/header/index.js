@@ -44,8 +44,8 @@ var Header = React.createClass({
     let lineSty = {}
     lineColor && ( lineSty.backgroundColor = lineColor )
 
-    // 非浏览器不展示头
-    if(!isWebview) return null;
+    // webview不展示头
+    if(isWebview) return null;
 
     return(
       <div className="mt-header-wrap">
