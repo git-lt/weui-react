@@ -1,0 +1,28 @@
+props:
+  start:
+    type: Boolean
+    default: false
+    desc: '是否自动开始计数'
+  startVal:
+    type: Number
+    default: 0
+    desc: '开始数字'
+  endVal:
+    type: Number
+    default: 0
+    desc: '结束数字'
+  decimals:
+    type: Number
+    default: 0
+    desc: '小数点位数'
+  duration:
+    type: Number
+    default: 2
+    desc: '动画持续时间'
+  options:
+    type: Object
+    default: '{}'
+    desc: 'countup.js的设置项'
+changes:
+  v0.1.17:
+    - '[new] 新组件 数字增长动画组件'

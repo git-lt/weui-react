@@ -46,10 +46,11 @@ let Home = React.createClass({
           <Cell label="Input" desc="输入" icon={ checkedIcon } href={'/#/input'}/>
           <Cell label="Textarea" desc="多行文本输入" icon={ checkedIcon } href={'/#/textarea'}/>
           <Cell label="Picker" desc="选择器" icon={ checkedIcon } href={'/#/picker'}/>
+          <Cell label="Datetime" desc="日期选择" icon={ checkedIcon } href={'/#/datetime'}/>
         </Group>
         <Group title="数据展示">
           <Cell label="FormPreview" desc="表单预览" icon={ checkedIcon } href={'/#/form-preview'}/>
-          <Cell label="Cell" desc="列表" icon={ checkedIcon } href={'/#/cell'}/>
+          <Cell label="Cell" desc="列表" icon={ checkedIcon } />
           <Cell label="Header" desc="页头" icon={ checkedIcon } href={'/#/header'}/>
           <Cell label="Badge" desc="徽章" icon={ checkedIcon } href={'/#/badge'}/>
           <Cell label="Swiper" desc="滑动相册" icon={ checkedIcon } href={'/#/swiper'}/>
@@ -57,6 +58,8 @@ let Home = React.createClass({
           <Cell label="Previewer" desc="图片查看器" icon={ checkedIcon } href={'/#/previewer'}/>
           <Cell label="Marquee" desc="跑马灯" icon={ checkedIcon } href={'/#/marquee'}/>
           <Cell label="Circle" desc="圆环进度" icon={ checkedIcon } href={'/#/circle'}/>
+          <Cell label="Clocker" desc="倒计时" icon={ checkedIcon } href={'/#/clocker'}/>
+          <Cell label="Countup" desc="数字增长" icon={ checkedIcon } href={'/#/countup'}/>
         </Group>
         <Group title="导航相关">
           <Cell label="Tab" desc="选项卡" icon={ checkedIcon } href={'/#/tab'}/>
@@ -66,19 +69,6 @@ let Home = React.createClass({
   }
 })
 
-// <Cell label="Picker" href={'/#/picker'}/>
-
-// <Cell label="Number" desc="数值输入" href={'/#/number'}/>
-// <Cell label="Address" desc="地址选择" href={'/#/address'}/>
-// <Cell label="Range" desc="范围选择" href={'/#/range'}/>
-// <Cell label="Datetime" desc="日期选择" href={'/#/datetime'}/>
-// <Cell label="DatetimeRange" desc="日期时间选择" href={'/#/datetimerange'}/>
-// <Cell label="Calendar" desc="日历" href={'/#/calendar'}/>
-// <Cell label="Countdown" desc="倒计时" href={'/#/coundown'}/>
-
-// <Cell label="Progress" desc="进度展示" href={'/#/progress'}/>
-// <Cell label="Geolocation" href={'/#/geolocation'}/>
-// <Cell label="Scroller" href={'/#/scroller'}/>
 export default Home;
 
 ```

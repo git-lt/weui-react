@@ -30,7 +30,7 @@ var Demo = React.createClass({
   },
   render: function() {
       return (
-          <Page title="Header" subTitle="只在浏览器中显示，微信与支付宝中不显示">
+          <Page title="Header" subTitle="只在浏览器中显示，APP的webview中不显示">
             <div className="weui-cells__title">默认</div>
             <Header>页面标题</Header>
 

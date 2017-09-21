@@ -1,4 +1,9 @@
 
+## v0.1.17
+- Clocker - <span class="change-tag new">new</span> 新组件 活动倒计时组件
+- Countup - <span class="change-tag new">new</span> 新组件 数字增长动画组件
+- Datetime - <span class="change-tag new">new</span> 新组件 日期选择
+
 ## v0.1.16
 - Circle - <span class="change-tag new">new</span> 新的图表组件 进度圆环展示
 - Header - <span class="change-tag enhance">enhance</span> 使用amfe-env包来判断非webview才显示header

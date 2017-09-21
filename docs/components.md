@@ -95,6 +95,91 @@ import { Circle } from 'mt-weui-react'
 |percent|Number|||进度数值|
 
 ----
+### <span class="mt-component-name">Clocker</span>
+<span class="mt-component-link"><a href="#" router-link="/demos/clocker">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/clocker" target="_bank">组件源码</a></span>
+``` js
+import { Clocker } from 'mt-weui-react'
+```
+
+<span class="mt-props-title">Props</span>
+
+| name  | type | default | version | description |
+|-------|------|---------|---------|-------------|
+|precision|Number|100||时间更新频率，默认为100ms|
+|time|Number|||最终时间，格式为时间戳|
+
+<span class="mt-props-title">Events</span>
+
+| name  | params | version | description |
+|-------|--------|---------|-------------|
+|formatFn|(d1, d2, h1, h2, m1, m2, s1, m2) 分别为天时分秒的十位与个位||返回JSX的时间显示模板|
+|onTick|(event)自定义的时间对象||时间更新的回调函数|
+|onFinish|||时间结束时的回调函数|
+----
+### <span class="mt-component-name">Countup</span>
+<span class="mt-component-link"><a href="#" router-link="/demos/countup">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/countup" target="_bank">组件源码</a></span>
+``` js
+import { Countup } from 'mt-weui-react'
+```
+
+<span class="mt-props-title">Props</span>
+
+| name  | type | default | version | description |
+|-------|------|---------|---------|-------------|
+|start|Boolean|||是否自动开始计数|
+|startVal|Number|||开始数字|
+|endVal|Number|||结束数字|
+|decimals|Number|||小数点位数|
+|duration|Number|2||动画持续时间|
+|options|Object|{}||countup.js的设置项|
+
+----
+### <span class="mt-component-name">Datetime</span>
+<span class="mt-component-link"><a href="#" router-link="/demos/datetime">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/datetime" target="_bank">组件源码</a></span>
+``` js
+import { Datetime } from 'mt-weui-react'
+```
+
+<span class="mt-props-title">Props</span>
+
+| name  | type | default | version | description |
+|-------|------|---------|---------|-------------|
+|label|String|||Cell的标题文本|
+|value|String|||当前日期（已经格式化好的日期，和format格要一致辞）|
+|defaultSelectedValue|String|||datetime picker打开时默认显示的日期|
+|format|String|YYYY-MM-DD||日期格式|
+|placeholder|String|||右侧提示文字|
+|confirmText|String|||picker右侧确认文字|
+|cancelText|String|||picker左侧取消文字|
+|clearText|String|||picker中间清空文字|
+|minYear|Number|||限制最大年份|
+|maxYear|Number|||限制最小年份|
+|minHour|Number|||限制小时|
+|maxHour|Number|||限制小时|
+|maxDate|Number|||限制日期，精确到天，不含时分秒|
+|minDate|Number|||限制日期，精确到天，不含时分秒|
+|readonly|Boolean|||是否只读，只读时，不实例化picker|
+|show|Boolean|||默认是否打开picker，可用于从外部元素使用此属性触发|
+|renderInline|Boolean|||是否直接在界面上显示|
+|yearRow|String|{value}||时间显示模板|
+|monthRow|String|{value}||时间显示模板|
+|dayRow|String|{value}||时间显示模板|
+|hourRow|String|{value}||时间显示模板|
+|minuteRow|String|{value}||时间显示模板|
+|hourList|Arrary|||小时列表|
+|minuteList|Arrary|||分钟列表|
+
+<span class="mt-props-title">Events</span>
+
+| name  | params | version | description |
+|-------|--------|---------|-------------|
+|updateShow|||外部使用其它方式触发时，更新显示状态的回调|
+|onChange|||选择时触发，一般用于直接在界面上展示，需要实时更新选择日期时的回调|
+|onClear|||清空时的回调|
+|onHide|||关闭时的回调|
+|onShow|||显示后的回调|
+|onConfirm|||确认选择的回调|
+----
 ### <span class="mt-component-name">Dialog</span>
 <span class="mt-component-link"><a href="#" router-link="/demos/dialog">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/dialog" target="_bank">组件源码</a></span>
 ``` js
@@ -510,6 +595,22 @@ import { Picker } from 'mt-weui-react'
 |-------|--------|---------|-------------|
 |onChage|(currentValues)||选择数据变化时，返回选择的数据|
 ----
+### <span class="mt-component-name">PopupHeader</span>
+<span class="mt-component-link"><a href="#" router-link="/demos/popup-header">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/popup-header" target="_bank">组件源码</a></span>
+``` js
+import { PopupHeader } from 'mt-weui-react'
+```
+
+<span class="mt-props-title">Props</span>
+
+| name  | type | default | version | description |
+|-------|------|---------|---------|-------------|
+|leftText|String|||左边的文字|
+|rightText|String|||右边的文字|
+|title|String|||标题|
+|showBottomBorder|Boolean|||是否显示底边框|
+
+----
 ### <span class="mt-component-name">Previewer</span>
 <span class="mt-component-link"><a href="#" router-link="/demos/previewer">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/previewer" target="_bank">组件源码</a></span>
 ``` js
@@ -582,21 +683,6 @@ import { Swiper } from 'mt-weui-react'
 | name  | params | version | description |
 |-------|--------|---------|-------------|
 |onChange|||切换后的回调|
-----
-### <span class="mt-component-name">Switch</span>
-<span class="mt-component-link"><a href="#" router-link="/demos/switch">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/switch" target="_bank">组件源码</a></span>
-``` js
-import { Switch } from 'mt-weui-react'
-```
-
-<span class="mt-props-title">Props</span>
-
-| name  | type | default | version | description |
-|-------|------|---------|---------|-------------|
-|label|Any|||标题 一般使用文本，更复杂的可使用jsx|
-|checked|Boolean|||是否选中|
-|disabled|Boolean|||是否禁用|
-
 ----
 ### <span class="mt-component-name">Tab</span>
 <span class="mt-component-link"><a href="#" router-link="/demos/tab">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/tab" target="_bank">组件源码</a></span>
