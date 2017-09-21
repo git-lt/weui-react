@@ -9,7 +9,7 @@ import {
   Home, Divider, Badge, Dialog, Toast, Button, Header,
   Checkbox, Flex, Grid, Msg, Input, Swiper, Switch, Tab,
   Tip, Textarea, Sticky, Offcanvas, FormPreview, Picker,
-  Previewer, Marquee, Circle,
+  Previewer, Marquee, Circle, Clocker, Datetime, Countup,
 } from './index'
 
 let App = React.createClass({
@@ -46,7 +46,10 @@ let routes = (
     <Route name="picker" handler={ Picker }/>
     <Route name="previewer" handler={ Previewer }/>
     <Route name="marquee" handler={ Marquee }/>
+    <Route name="clocker" handler={ Clocker }/>
     <Route name="circle" handler={ Circle }/>
+    <Route name="datetime" handler={ Datetime }/>
+    <Route name="countup" handler={ Countup }/>
     <DefaultRoute handler={ Home }/>
   </Route>
 )

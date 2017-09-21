@@ -1,0 +1,21 @@
+props:
+  precision:
+    type: Number
+    default: 100
+    desc: '时间更新频率，默认为100ms'
+  time:
+    type: Number
+    default: 0
+    desc: '最终时间，格式为时间戳'
+events:
+  formatFn:
+    params: '(d1, d2, h1, h2, m1, m2, s1, m2) 分别为天时分秒的十位与个位'
+    desc: '返回JSX的时间显示模板'
+  onTick:
+    params: '(event)自定义的时间对象'
+    desc: '时间更新的回调函数'
+  onFinish:
+    desc: '时间结束时的回调函数'
+changes:
+  v0.1.17:
+    - '[new] 新组件 活动倒计时组件'

@@ -1603,6 +1603,10 @@ cosmiconfig@^2.1.0, cosmiconfig@^2.1.1:
     parse-json "^2.2.0"
     require-from-string "^1.1.0"
 
+countup.js@^1.9.1:
+  version "1.9.1"
+  resolved "https://registry.npmjs.org/countup.js/-/countup.js-1.9.1.tgz#0ab10eed91fd06eb751443afc1403982452c26f0"
+
 create-error-class@^3.0.1:
   version "3.0.2"
   resolved "https://registry.npmjs.org/create-error-class/-/create-error-class-3.0.2.tgz#06be7abef947a3f14a30fd610671d401bca8b7b6"

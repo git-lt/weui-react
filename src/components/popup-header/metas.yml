@@ -1,0 +1,13 @@
+props:
+  leftText:
+    type: String
+    desc: 左边的文字
+  rightText:
+    type: String
+    desc: 右边的文字
+  title:
+    type: String
+    desc: 标题
+  showBottomBorder:
+    type: Boolean
+    desc: 是否显示底边框

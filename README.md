@@ -158,18 +158,17 @@ yarn run docs
 - [x] Previewer
 - [x] Circle
 - [x] Marquee
-- [ ] DateTimeView
-- [ ] DateTimeRange
-- [ ] Datetime
-- [ ] Address
+- [x] PopupHeader
+
+- [x] Datetime
+- [x] Clocker
+- [x] Countup
 - [ ] PopupPicker
-- [ ] PopupHeader
+- [ ] DateTimeRange
+- [ ] Address
 - [ ] PopupRadio
-- [ ] Table
-- [ ] Countup 数字显示
-- [ ] Clocker 倒计时
 - [ ] Actionsheet
-- [ ] Number 数字加减
+- [ ] Number
 
 
 ## 感谢

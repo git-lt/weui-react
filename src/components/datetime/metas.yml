@@ -1,0 +1,125 @@
+props:
+  label:
+    type: String
+    default: ''
+    desc: 'Cell的标题文本'
+  value:
+    type: String
+    default: ''
+    desc: '当前日期（已经格式化好的日期，和format格要一致辞）'
+  defaultSelectedValue: ''
+    type: String
+    default: ''
+    desc: 'datetime picker打开时默认显示的日期'
+  format:
+    type: String
+    default: 'YYYY-MM-DD'
+    desc: '日期格式'
+  placeholder:
+    type: String
+    default: ''
+    desc: '右侧提示文字'
+  confirmText:
+    type: String
+    default: ''
+    desc: 'picker右侧确认文字'
+  cancelText:
+    type: String
+    default: ''
+    desc: 'picker左侧取消文字'
+  clearText:
+    type: String
+    default: ''
+    desc: 'picker中间清空文字'
+  minYear:
+    type: Number
+    default: 0
+    desc: '限制最大年份'
+  maxYear:
+    type: Number
+    default: 0
+    desc: '限制最小年份'
+  minHour:
+    type: Number
+    default: 0
+    desc: '限制小时'
+  maxHour:
+    type: Number
+    default: 0
+    desc: '限制小时'
+  maxDate:
+    type: Number
+    default: 0
+    desc: '限制日期，精确到天，不含时分秒'
+  minDate:
+    type: Number
+    default: 0
+    desc: '限制日期，精确到天，不含时分秒'
+  readonly:
+    type: Boolean
+    default: false
+    desc: '是否只读，只读时，不实例化picker'
+  show:
+    type: Boolean
+    default: false
+    desc: '默认是否打开picker，可用于从外部元素使用此属性触发'
+  renderInline:
+    type: Boolean
+    default: false
+    desc: '是否直接在界面上显示'
+  yearRow:
+    type: String
+    default: '{value}'
+    desc: '时间显示模板'
+  monthRow:
+    type: String
+    default: '{value}'
+    desc: '时间显示模板'
+  dayRow:
+    type: String
+    default: '{value}'
+    desc: '时间显示模板'
+  hourRow:
+    type: String
+    default: '{value}'
+    desc: '时间显示模板'
+  minuteRow:
+    type: String
+    default: '{value}'
+    desc: '时间显示模板'
+  hourList:
+    type: Arrary
+    default: []
+    desc: '小时列表'
+  minuteList:
+    type: Arrary
+    default: []
+    desc: '分钟列表'
+events:
+  updateShow:
+    type: function
+    default: ''
+    desc: '外部使用其它方式触发时，更新显示状态的回调'
+  onChange:
+    type: function
+    default: ''
+    desc: '选择时触发，一般用于直接在界面上展示，需要实时更新选择日期时的回调'
+  onClear:
+    type: function
+    default: ''
+    desc: '清空时的回调'
+  onHide:
+    type: function
+    default: ''
+    desc: '关闭时的回调'
+  onShow:
+    type: function
+    default: ''
+    desc: '显示后的回调'
+  onConfirm:
+    type: function
+    default: ''
+    desc: '确认选择的回调'
+changes:
+  v0.1.17:
+    - '[new] 新组件 日期选择'

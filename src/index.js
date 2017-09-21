@@ -25,6 +25,9 @@ import Picker from './components/picker'
 import Previewer from './components/previewer'
 import Marquee from './components/marquee'
 import Circle from './components/circle'
+import Clocker from './components/clocker'
+import Datetime from './components/datetime'
+import Countup from './components/countup'
 
 const FlexItem = Flex.FlexItem
 const GridItem = Grid.GridItem
@@ -70,4 +73,7 @@ export {
   Marquee,
   MarqueeItem,
   Circle,
+  Clocker,
+  Datetime,
+  Countup,
 };

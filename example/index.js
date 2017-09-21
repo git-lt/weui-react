@@ -23,6 +23,9 @@ import Picker from './pages/picker'
 import Previewer from './pages/previewer'
 import Marquee from './pages/marquee'
 import Circle from './pages/circle'
+import Clocker from './pages/clocker'
+import Datetime from './pages/datetime'
+import Countup from './pages/countup'
 
 export {
     Home,
@@ -50,4 +53,6 @@ export {
     Previewer,
     Marquee,
     Circle,
+    Clocker,
+    Countup,
 }
