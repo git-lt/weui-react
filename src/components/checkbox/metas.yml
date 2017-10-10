@@ -34,3 +34,6 @@ events:
   onClick:
     params: ''
     desc: '点击时的回调函数'
+changes:
+  v0.1.19:
+    - '[enhance] 优化checkbox在实心形态下选中的效果'

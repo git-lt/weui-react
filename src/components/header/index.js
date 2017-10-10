@@ -1,6 +1,6 @@
 import React from 'react'
 import { browser } from 'amfe-env'
-const isWebview = !!browser.isWebview
+const isWebview = !!browser.isWebview  || browser.name == 'QQ';
 import './index.less'
 
 var Header = React.createClass({
@@ -62,7 +62,7 @@ var Header = React.createClass({
             { right }
             {showHome && <a className="iconfont icon-shouye mt-header-icon-home" href="javascript:;" onClick={ this.goHome }></a>}
           </div>
-          <div className="mt-header-ink-bar mainbackground" style={ lineSty }></div>
+          <div className="mt-header-ink-bar maincolor" style={ lineSty }></div>
         </div>
       </div>
     )

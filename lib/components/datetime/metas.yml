@@ -7,7 +7,7 @@ props:
     type: String
     default: ''
     desc: '当前日期（已经格式化好的日期，和format格要一致辞）'
-  defaultSelectedValue: ''
+  defaultSelectedValue:
     type: String
     default: ''
     desc: 'datetime picker打开时默认显示的日期'

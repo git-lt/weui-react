@@ -44,7 +44,7 @@ module.exports = {
         new webpack.DefinePlugin({
             DEBUG: process.env.NODE_ENV !== 'production'
         }),
-        new ExtractTextPlugin('weui.min.css'),
+        new ExtractTextPlugin('weui.min.css'), 
         new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js'),
         // new webpack.optimize.UglifyJsPlugin({
         //     sourceMap: false,

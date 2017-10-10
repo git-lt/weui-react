@@ -42,11 +42,6 @@ var Demo = React.createClass({
     },
 });
 
-// <Picker data={ this.state.data3 } value={[]} columns={ 3 }></Picker>
-// <Picker data={ this.state.data2 } value={[2001, 2, 13]}></Picker>
-
-// <Picker data={ this.state.data2 } value={['2001', '2', '13']}></Picker>
-// <Picker data={ this.state.data3 } value={[]} columns={ 3 }></Picker>
 export default Demo
 
 ```

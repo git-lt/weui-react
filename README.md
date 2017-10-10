@@ -163,11 +163,11 @@ yarn run docs
 - [x] Datetime
 - [x] Clocker
 - [x] Countup
-- [ ] PopupPicker
-- [ ] DateTimeRange
-- [ ] Address
+- [x] PopupPicker
 - [ ] PopupRadio
 - [ ] Actionsheet
+- [ ] DateTimeRange
+- [ ] Address
 - [ ] Number
 
 

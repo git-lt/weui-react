@@ -1,0 +1,35 @@
+props:
+  show:
+    type: Boolean
+    default: false
+    desc: 显示隐藏
+  label:
+    type: String
+    desc: label名称
+  displayFormat:
+    type: Function
+    default: 'v=>v'
+    desc: '格式化函数，用于格式化选中的值'
+  value:
+    type: String
+    desc: 默认选中的值
+  cancelText:
+    type: String
+    default: 取消
+  confirmText:
+    type: String
+    default: 确定
+  placeholder:
+    type: String
+    desc: 提示文本
+  columns:
+    type: Number
+    default: 0
+    desc: '列数，用于联动数据'
+events:
+  onChage:
+    params: '(arrValue)'
+    desc: '选择之后的回调'
+changes:
+  v0.1.19:
+    - '[new] 新组件 弹出层数据选择器'

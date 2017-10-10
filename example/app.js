@@ -10,6 +10,7 @@ import {
   Checkbox, Flex, Grid, Msg, Input, Swiper, Switch, Tab,
   Tip, Textarea, Sticky, Offcanvas, FormPreview, Picker,
   Previewer, Marquee, Circle, Clocker, Datetime, Countup,
+  PopupPicker,
 } from './index'
 
 let App = React.createClass({
@@ -50,6 +51,7 @@ let routes = (
     <Route name="circle" handler={ Circle }/>
     <Route name="datetime" handler={ Datetime }/>
     <Route name="countup" handler={ Countup }/>
+    <Route name="popup-picker" handler={ PopupPicker }/>
     <DefaultRoute handler={ Home }/>
   </Route>
 )

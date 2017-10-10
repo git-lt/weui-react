@@ -28,6 +28,7 @@ import Circle from './components/circle'
 import Clocker from './components/clocker'
 import Datetime from './components/datetime'
 import Countup from './components/countup'
+import PopupPicker from './components/popup-picker'
 
 const FlexItem = Flex.FlexItem
 const GridItem = Grid.GridItem
@@ -75,5 +76,7 @@ export {
   Circle,
   Clocker,
   Datetime,
+
   Countup,
+  PopupPicker,
 };

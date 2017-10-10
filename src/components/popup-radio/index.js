@@ -2,7 +2,6 @@ import React from 'react'
 import classNames from 'classnames'
 import './index.less'
 import Offcanvas from '../offcanvas'
-import Picker from '../picker'
 import PopupHeader from '../popup-header'
 import Flex from '../flex'
 
@@ -10,7 +9,7 @@ const FlexItem = Flex.FlexItem
 
 const noop = ()=>{}
 
-var PopupPicker = React.createClass({
+var PopupRadio = React.createClass({
   getInitialState(){
     const { show, value, displayFormat, placeholder } = this.props
 
@@ -58,7 +57,6 @@ var PopupPicker = React.createClass({
         <Offcanvas show={ show } position="bottom" closeByMask onClose={ this.onHide }>
           <div className="mt-popup-picker-container">
             <PopupHeader leftText="取消" rightText="确定" onClickLeft={ ()=>this.onHide(false) } onClickRight={ ()=>this.onHide(true) }/>
-            <Picker data={ data } value={ value } onChange={ this.onPickerChange } columns={ columns }></Picker>
           </div>
         </Offcanvas>
       </div>
@@ -66,7 +64,7 @@ var PopupPicker = React.createClass({
   }
 })
 
-PopupPicker.propTypes ={
+PopupRadio.propTypes ={
   show: React.PropTypes.bool,
   label: React.PropTypes.any,
   displayFormat: React.PropTypes.func,
@@ -79,7 +77,7 @@ PopupPicker.propTypes ={
 }
 
 
-PopupPicker.defaultProps ={
+PopupRadio.defaultProps ={
   show: false,
   label: '',
   displayFormat: v=>v,
@@ -91,4 +89,4 @@ PopupPicker.defaultProps ={
   onChange: noop,
 }
 
-export default PopupPicker
+export default PopupRadio

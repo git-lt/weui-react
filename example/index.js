@@ -26,6 +26,7 @@ import Circle from './pages/circle'
 import Clocker from './pages/clocker'
 import Datetime from './pages/datetime'
 import Countup from './pages/countup'
+import PopupPicker from './pages/popup-picker'
 
 export {
     Home,
@@ -55,4 +56,6 @@ export {
     Circle,
     Clocker,
     Countup,
+    PopupPicker,
+    Datetime,
 }

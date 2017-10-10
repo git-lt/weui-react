@@ -1,4 +1,9 @@
 
+## v0.1.19
+- Checkbox - <span class="change-tag enhance">enhance</span> 优化checkbox在实心形态下选中的效果
+- Header - <span class="change-tag change">change</span> 底边线支持自动使用主题色
+- PopupPicker - <span class="change-tag new">new</span> 新组件 弹出层数据选择器
+
 ## v0.1.17
 - Clocker - <span class="change-tag new">new</span> 新组件 活动倒计时组件
 - Countup - <span class="change-tag new">new</span> 新组件 数字增长动画组件

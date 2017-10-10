@@ -3,9 +3,9 @@ props:
     type: Boolean
     default: false
     desc: 显示隐藏
-  pageTitle:
-    type: String
-    desc: '页面标题, header 中的title'
+  header:
+    type: Object
+    desc: '页面标题的props，详细请看Header组件'
   title:
     type: Any
     desc: '标题, 可以是jsx'

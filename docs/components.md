@@ -476,7 +476,7 @@ import { Msg } from 'mt-weui-react'
 | name  | type | default | version | description |
 |-------|------|---------|---------|-------------|
 |show|Boolean|||显示隐藏|
-|pageTitle|String|||页面标题, header 中的title|
+|header|Object|||页面标题的props，详细请看Header组件|
 |title|Any|||标题, 可以是jsx|
 |desc|Any|||描述, 可以是jsx|
 |type|String|success||显示类型  sucess / error|
@@ -610,6 +610,31 @@ import { PopupHeader } from 'mt-weui-react'
 |title|String|||标题|
 |showBottomBorder|Boolean|||是否显示底边框|
 
+----
+### <span class="mt-component-name">PopupPicker</span>
+<span class="mt-component-link"><a href="#" router-link="/demos/popup-picker">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/popup-picker" target="_bank">组件源码</a></span>
+``` js
+import { PopupPicker } from 'mt-weui-react'
+```
+
+<span class="mt-props-title">Props</span>
+
+| name  | type | default | version | description |
+|-------|------|---------|---------|-------------|
+|show|Boolean|||显示隐藏|
+|label|String|||label名称|
+|displayFormat|Function|v=>v||格式化函数，用于格式化选中的值|
+|value|String|||默认选中的值|
+|cancelText|String|取消|||
+|confirmText|String|确定|||
+|placeholder|String|||提示文本|
+|columns|Number|||列数，用于联动数据|
+
+<span class="mt-props-title">Events</span>
+
+| name  | params | version | description |
+|-------|--------|---------|-------------|
+|onChage|(arrValue)||选择之后的回调|
 ----
 ### <span class="mt-component-name">Previewer</span>
 <span class="mt-component-link"><a href="#" router-link="/demos/previewer">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/previewer" target="_bank">组件源码</a></span>

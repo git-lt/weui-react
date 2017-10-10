@@ -35,25 +35,19 @@
     .mt-icon-checked:after { border-radius: 0; }
   }
   &_circle-fill,&_rect-fill{
-    .mt-icon-checked:before {
-      content:'\EA06';
-      left: 0; right: 0;
-      font: normal normal normal 14px/1 "weui";
-      font-size: inherit;
-      text-rendering: auto;
-      font-size: 20px;
-      color: #09BB07;
-      overflow: hidden;
+    .weui-icon-success-no-circle{
       opacity: 0;
-      -webkit-font-smoothing: antialiased;
+      color: #fff;
+      background: #09BB07;
+      width: .2rem;
+      height: .2rem;
+      line-height: .2rem;
+      text-align: center;
+      font-size: 15px;
     }
   }
-  &_rect-fill {
-    .mt-icon-checked:before {
-      font-size: 28px;
-      line-height: 19px;
-      text-indent: -4px;
-    }
+  &_circle-fill .weui-icon-success-no-circle {
+    border-radius: 50%;
   }
 }
 
@@ -71,7 +65,7 @@
 }
 
 .mt-checkbox_circle-fill, .mt-radio_circle-fill {
-  .mt-checkbox__input:checked ~ .mt-icon-checked:before {
+  .mt-checkbox__input:checked ~ .mt-icon-checked > .weui-icon-success-no-circle {
     opacity: 1;
   }
   .mt-checkbox__input:checked ~ .mt-icon-checked:after {
@@ -80,7 +74,7 @@
 }
 
 .mt-checkbox_rect-fill, .mt-radio_rect-fill {
-  .mt-checkbox__input:checked ~ .mt-icon-checked:before {
+  .mt-checkbox__input:checked ~ .mt-icon-checked > .weui-icon-success-no-circle {
     opacity: 1;
   }
   .mt-checkbox__input:checked ~ .mt-icon-checked:after {

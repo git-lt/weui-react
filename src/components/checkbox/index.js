@@ -30,17 +30,21 @@ var Checkbox = React.createClass({
   renderIpt(options){
     const {
       position, type, name, id, value, checked,
-      disabled, others, className
+      disabled, others, className, shape,
     } = options;
 
     const pos = position === 'right' ? 'ft' : 'hd';
 
     let opt = { type, name, className, value, id, checked, disabled }
-
+    console.log(shape)
     return (
       <div className={ `weui-cell__${pos}` }>
           <input { ...opt } { ...others } onChange={ this.changeEv }/>
-          <span className="mt-icon-checked"></span>
+          <span className="mt-icon-checked">
+              {
+                ['rect-fill', 'circle-fill'].indexOf(shape)>-1 && <i className="weui-icon-success-no-circle"></i>
+              }
+          </span>
       </div>
     )
   },
@@ -90,6 +94,7 @@ var Checkbox = React.createClass({
               name,
               others,
               max,
+              shape,
               className: clsIpt
             }
 

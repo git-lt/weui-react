@@ -1,52 +1,28 @@
-.mt-popup-dialog {
-  position: fixed;
+.mt-cell-primary {
+  flex: 1;
+}
+.mt-cell-box {
+  position: relative;
+}
+.mt-cell-box:before {
+  content: " ";
+  position: absolute;
   left: 0;
-  bottom: 0;
+  top: 0;
   width: 100%;
-  background: transparent;
-  z-index: 501;
-  transition-property: transform;
-  transition-duration: 300ms;
-  max-height: 100%;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+  height: 1px;
+  border-top: 1px solid #D9D9D9;
+  color: #D9D9D9;
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+  left: 15px;
 }
-.mt-popup-dialog.mt-popup-left {
-  width: auto;
-  height: 100%;
-  top: 0;
-  right: auto;
-  bottom: auto;
-  left: 0;
+.mt-popup-picker-cancel {
+  color: #666;
 }
-.mt-popup-dialog.mt-popup-right {
-  width: auto;
-  height: 100%;
-  top: 0;
-  right: 0;
-  bottom: auto;
-  left: auto;
+.mt-popup-picker-placeholder {
+  color: #999;
 }
-.mt-popup-dialog.mt-popup-top {
-  width: 100%;
-  top: 0;
-  right: auto;
-  bottom: auto;
-  left: 0;
-}
-.mt-popup-mask {
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  tap-highlight-color: rgba(0,0,0,0);
-  z-index: -1;
-  transition: opacity 400ms;
-}
-.mt-popup-mask.mt-popup-show {
-  opacity: 1;
+.mt-popup-picker-container{
+  background-color: #eee;
 }

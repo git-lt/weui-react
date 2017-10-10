@@ -11,8 +11,8 @@ const Msg = React.createClass({
   },
   render(){
     const {
-      show, pageTitle, title, desc, type, buttons,
-      footerLinks, footerText, className,
+      show, title, desc, type, buttons,
+      footerLinks, footerText, className, header={},
     } = this.props;
 
     const wrapCls = classNames('mt-msg-page',{
@@ -26,7 +26,7 @@ const Msg = React.createClass({
 
     return (
       <div className={ wrapCls }>
-        {!!pageTitle && <Header title={ pageTitle }/> }
+        {!!header.title && <Header { ...header }/> }
         <div className="weui-msg">
             <div className="weui-msg__icon-area">{ mainIcon }</div>
 
@@ -60,24 +60,24 @@ const Msg = React.createClass({
 
 Msg.propTypes = {
   show: React.PropTypes.bool,
-  pageTitle: React.PropTypes.string,
   title: React.PropTypes.any,
   desc: React.PropTypes.any,
   type: React.PropTypes.string,
   buttons: React.PropTypes.array,
   footerLinks: React.PropTypes.array,
   footerText: React.PropTypes.string,
+  header: React.PropTypes.object,
 };
 
 Msg.defaultProps = {
   show: false,         // 显示隐藏
-  pageTitle: '',       // 页面标题, header 中的title
   title: '操作成功',    // 标题, 可以是jsx
   desc: '',            // 描述, 可以是jsx
   type: 'success',     // 类型  sucess / error
   buttons: [],         // Button 组件数组
   footerLinks:[],      // 底部链接，[{ href:'', text:'' }]
   footerText: '',      // 底部文字
+  header: {},
 };
 
 export default Msg
