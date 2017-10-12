@@ -30,6 +30,12 @@ import Datetime from './components/datetime'
 import Countup from './components/countup'
 import PopupPicker from './components/popup-picker'
 
+import PopupRadio from './components/popup-radio'
+import PopupAddress from './components/popup-address'
+import XNumber from './components/x-number'
+import Progress from './components/progress'
+import Range from './components/range'
+
 const FlexItem = Flex.FlexItem
 const GridItem = Grid.GridItem
 const SwiperItem = Swiper.SwiperItem
@@ -79,4 +85,10 @@ export {
 
   Countup,
   PopupPicker,
+
+  PopupRadio,
+  PopupAddress,
+  XNumber,
+  Progress,
+  Range,
 };

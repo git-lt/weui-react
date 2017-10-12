@@ -2,61 +2,66 @@ import React from 'react'
 import classNames from 'classnames'
 import './index.less'
 import Offcanvas from '../offcanvas'
-import PopupHeader from '../popup-header'
-import Flex from '../flex'
-
-const FlexItem = Flex.FlexItem
 
 const noop = ()=>{}
+
+const uuid = ()=>{
+  return Math.random().toString(16).substr(2).slice(-5)+(new Date()).getTime().toString(16).slice(9);
+}
 
 var PopupRadio = React.createClass({
   getInitialState(){
     const { show, value, displayFormat, placeholder } = this.props
 
-    this.tempValue = value;
-
     return {
       show: !!show,
-      currValue: value.slice(),
+      currValue: value+'',
     }
   },
 
-  onShow(){
-    this.setState({ show: true })
-  },
-
-  onPickerChange(v){
-    this.tempValue = v;
-  },
-
-  onHide(isConfirm){
-    this.setState({ show: false })
-    if(isConfirm){
-      this.props.onChange(this.tempValue);
-      this.setState({ currValue: this.tempValue})
-    }
+  onClick(v){
+    this.props.onCheck(v);
+    this.setState({currValue: v, show: false })
   },
 
   render(){
     const {
       label, inlineDesc, displayFormat, value, data, placeholder,
-      cancelText, confirmText, columns,
     } = this.props
 
     let { show, currValue } = this.state
 
     return (
       <div className="mt-cell-box">
-        <div className="weui-cell mt-tap-active weui-cell_access" onClick={ this.onShow }>
+        <div className="weui-cell weui-cell_access" onClick={ ()=>this.setState({ show: true }) }>
           <div className="weui-cell__bd">
             { label }
           </div>
           <div className="weui-cell__ft">{ currValue ? displayFormat(currValue) : placeholder }</div>
         </div>
 
-        <Offcanvas show={ show } position="bottom" closeByMask onClose={ this.onHide }>
-          <div className="mt-popup-picker-container">
-            <PopupHeader leftText="取消" rightText="确定" onClickLeft={ ()=>this.onHide(false) } onClickRight={ ()=>this.onHide(true) }/>
+        <Offcanvas show={ show } position="bottom" closeByMask onClose={ ()=>this.setState({ show: false }) }>
+          <div className="mt-popup-radio-container">
+            <div className="weui-cells weui-cells_radio">
+            {
+              data.map((v, i)=>{
+                const id = 'r-'+uuid();
+                if(typeof v !== 'object') v = { label: v, value: v}
+                return (
+                  <label className="weui-cell weui-check__label" htmlFor={ id } onClick={ ()=>this.onClick(v.value) }>
+                      <div className="weui-cell__bd">
+                          <p>{ v.label }</p>
+                          {!!v.desc && <div className="weui-cell__bd-desc">{ v.desc }</div>}
+                      </div>
+                      <div className="weui-cell__ft">
+                          <input type="radio" className="weui-check" value={ v.value } checked={ currValue == v.value } onChange={()=>{}} id={ id } />
+                          <span className="weui-icon-checked"></span>
+                      </div>
+                  </label>
+                )
+              })
+            }
+            </div>
           </div>
         </Offcanvas>
       </div>
@@ -68,12 +73,10 @@ PopupRadio.propTypes ={
   show: React.PropTypes.bool,
   label: React.PropTypes.any,
   displayFormat: React.PropTypes.func,
-  value: React.PropTypes.array,
-  cancelText: React.PropTypes.string,
-  confirmText: React.PropTypes.string,
+  value: React.PropTypes.string,
   placeholder: React.PropTypes.string,
-  columns: React.PropTypes.number,
-  onChange: React.PropTypes.func,
+  data: React.PropTypes.array,
+  onCheck: React.PropTypes.func,
 }
 
 
@@ -82,11 +85,9 @@ PopupRadio.defaultProps ={
   label: '',
   displayFormat: v=>v,
   value: '',
-  cancelText: '取消',
-  confirmText: '确定',
   placeholder: '',
-  columns: 0,
-  onChange: noop,
+  onCheck: noop,
+  data: [], // { label, value, desc }
 }
 
 export default PopupRadio

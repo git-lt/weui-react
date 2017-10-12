@@ -1,0 +1,16 @@
+props:
+  percent:
+    type: Number
+    default: 0
+    desc: 进度值，0到100
+  showCancel:
+    type: Boolean
+    default: true
+    desc: 是否显示取消按钮
+events:
+  onCancel:
+    params: '(percent)'
+    desc: 点击取消按钮时触发
+changes:
+  v0.1.20:
+    - '[new] 新组件 进度条组件'

@@ -1,6 +1,6 @@
 {
   "name": "mt-weui-react",
-  "version": "0.1.19",
+  "version": "0.1.20",
   "description": "weui for react",
   "main": "./lib",
   "scripts": {

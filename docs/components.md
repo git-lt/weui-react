@@ -595,6 +595,32 @@ import { Picker } from 'mt-weui-react'
 |-------|--------|---------|-------------|
 |onChage|(currentValues)||选择数据变化时，返回选择的数据|
 ----
+### <span class="mt-component-name">PopupAddress</span>
+<span class="mt-component-link"><a href="#" router-link="/demos/popup-address">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/popup-address" target="_bank">组件源码</a></span>
+``` js
+import { PopupAddress } from 'mt-weui-react'
+```
+
+<span class="mt-props-title">Props</span>
+
+| name  | type | default | version | description |
+|-------|------|---------|---------|-------------|
+|show|Boolean|||显示隐藏|
+|label|String|||label名称|
+|displayFormat|Function|v=>v||格式化函数，用于格式化选中的值|
+|value|String|||默认选中的值|
+|cancelText|String|取消|||
+|confirmText|String|确定|||
+|placeholder|String|||提示文本|
+|columns|Number|||列数，用于联动数据|
+|data|Array|||数组数据，格式参数Picker组件|
+
+<span class="mt-props-title">Events</span>
+
+| name  | params | version | description |
+|-------|--------|---------|-------------|
+|onChage|(arrValue)||选择之后的回调|
+----
 ### <span class="mt-component-name">PopupHeader</span>
 <span class="mt-component-link"><a href="#" router-link="/demos/popup-header">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/popup-header" target="_bank">组件源码</a></span>
 ``` js
@@ -629,6 +655,33 @@ import { PopupPicker } from 'mt-weui-react'
 |confirmText|String|确定|||
 |placeholder|String|||提示文本|
 |columns|Number|||列数，用于联动数据|
+|data|Array|||数组数据，格式参数Picker组件|
+
+<span class="mt-props-title">Events</span>
+
+| name  | params | version | description |
+|-------|--------|---------|-------------|
+|onChage|(arrValue)||选择之后的回调|
+----
+### <span class="mt-component-name">PopupRadio</span>
+<span class="mt-component-link"><a href="#" router-link="/demos/popup-radio">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/popup-radio" target="_bank">组件源码</a></span>
+``` js
+import { PopupRadio } from 'mt-weui-react'
+```
+
+<span class="mt-props-title">Props</span>
+
+| name  | type | default | version | description |
+|-------|------|---------|---------|-------------|
+|show|Boolean|||显示隐藏|
+|label|String|||label名称|
+|displayFormat|Function|v=>v||格式化函数，用于格式化选中的值|
+|value|String|||默认选中的值|
+|cancelText|String|取消|||
+|confirmText|String|确定|||
+|placeholder|String|||提示文本|
+|columns|Number|||列数，用于联动数据|
+|data|Array|||数组数据，格式参数Picker组件|
 
 <span class="mt-props-title">Events</span>
 
@@ -660,6 +713,52 @@ import { Previewer } from 'mt-weui-react'
 |-------|--------|---------|-------------|
 |show|(index)||图片的索引|
 |close|(index)||图片的索引|
+----
+### <span class="mt-component-name">Progress</span>
+<span class="mt-component-link"><a href="#" router-link="/demos/progress">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/progress" target="_bank">组件源码</a></span>
+``` js
+import { Progress } from 'mt-weui-react'
+```
+
+<span class="mt-props-title">Props</span>
+
+| name  | type | default | version | description |
+|-------|------|---------|---------|-------------|
+|percent|Number|||进度值，0到100|
+|showCancel|Boolean|true||是否显示取消按钮|
+
+<span class="mt-props-title">Events</span>
+
+| name  | params | version | description |
+|-------|--------|---------|-------------|
+|onCancel|(percent)||点击取消按钮时触发|
+----
+### <span class="mt-component-name">Range</span>
+<span class="mt-component-link"><a href="#" router-link="/demos/range">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/range" target="_bank">组件源码</a></span>
+``` js
+import { Range } from 'mt-weui-react'
+```
+
+<span class="mt-props-title">Props</span>
+
+| name  | type | default | version | description |
+|-------|------|---------|---------|-------------|
+|value|Number|||选择器的初始值|
+|decimal|Boolean|||是否在变化时显示小数|
+|min|Number|||可选最小值|
+|max|Number|100||可选最大值|
+|step|Number|1||步长|
+|disabled|Boolean|||是否禁用|
+|minHTML|String|||最小值显示的html模板|
+|maxHTML|String|||最大值显示的html模板|
+|disabledOpacity|Number|||禁用样式的透明度|
+|rangeBarHeight|Number|1||高度|
+
+<span class="mt-props-title">Events</span>
+
+| name  | params | version | description |
+|-------|--------|---------|-------------|
+|onChange|`(value)`||绑定值变化时触发事件|
 ----
 ### <span class="mt-component-name">Sticky</span>
 <span class="mt-component-link"><a href="#" router-link="/demos/sticky">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/sticky" target="_bank">组件源码</a></span>
@@ -803,3 +902,28 @@ import { Toast } from 'mt-weui-react'
 |-------|--------|---------|-------------|
 |onShow|||打开的回调|
 |onClose|||关闭的回调|
+----
+### <span class="mt-component-name">XNumber</span>
+<span class="mt-component-link"><a href="#" router-link="/demos/x-number">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/x-number" target="_bank">组件源码</a></span>
+``` js
+import { XNumber } from 'mt-weui-react'
+```
+
+<span class="mt-props-title">Props</span>
+
+| name  | type | default | version | description |
+|-------|------|---------|---------|-------------|
+|value|Number|||默认数值|
+|label|String|||表单lable|
+|min|Number|||最小值|
+|max|Number|100||最大值|
+|step|Number|1||步长|
+|fillable|Boolean|||是否可填写|
+|width|String|50px||输入框宽度|
+|buttonStyle|String|square||按钮样式，可选值为`square`或者`round`|
+
+<span class="mt-props-title">Events</span>
+
+| name  | params | version | description |
+|-------|--------|---------|-------------|
+|onChange|`(value)`||绑定值变化时触发事件|

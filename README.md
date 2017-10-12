@@ -159,16 +159,18 @@ yarn run docs
 - [x] Circle
 - [x] Marquee
 - [x] PopupHeader
-
 - [x] Datetime
 - [x] Clocker
 - [x] Countup
 - [x] PopupPicker
-- [ ] PopupRadio
-- [ ] Actionsheet
-- [ ] DateTimeRange
-- [ ] Address
-- [ ] Number
+- [x] PopupRadio
+- [x] PopupAddress
+- [x] XNumber
+- [x] Range
+- [x] Progress
+
+- [ ] qrcode
+- [ ] scroller
 
 
 ## 感谢

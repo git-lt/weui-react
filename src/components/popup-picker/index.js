@@ -52,7 +52,7 @@ var PopupPicker = React.createClass({
           <div className="weui-cell__bd">
             { label }
           </div>
-          <div className="weui-cell__ft">{ currValue ? displayFormat(currValue) : placeholder }</div>
+          <div className="weui-cell__ft">{ (currValue && currValue.length) ? displayFormat(currValue) : placeholder }</div>
         </div>
 
         <Offcanvas show={ show } position="bottom" closeByMask onClose={ this.onHide }>
@@ -75,6 +75,7 @@ PopupPicker.propTypes ={
   confirmText: React.PropTypes.string,
   placeholder: React.PropTypes.string,
   columns: React.PropTypes.number,
+  data: React.PropTypes.array,
   onChange: React.PropTypes.func,
 }
 
@@ -87,6 +88,7 @@ PopupPicker.defaultProps ={
   cancelText: '取消',
   confirmText: '确定',
   placeholder: '',
+  data: [],
   columns: 0,
   onChange: noop,
 }

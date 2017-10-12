@@ -26,6 +26,10 @@ props:
     type: Number
     default: 0
     desc: '列数，用于联动数据'
+  data:
+    type: Array
+    default: []
+    desc: '数组数据，格式参数Picker组件'
 events:
   onChage:
     params: '(arrValue)'

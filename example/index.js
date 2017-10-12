@@ -28,6 +28,12 @@ import Datetime from './pages/datetime'
 import Countup from './pages/countup'
 import PopupPicker from './pages/popup-picker'
 
+import PopupRadio from './pages/popup-radio'
+import PopupAddress from './pages/popup-address'
+import XNumber from './pages/x-number'
+import Range from './pages/range'
+import Progress from './pages/progress'
+
 export {
     Home,
 
@@ -58,4 +64,10 @@ export {
     Countup,
     PopupPicker,
     Datetime,
+
+    PopupRadio,
+    PopupAddress,
+    XNumber,
+    Range,
+    Progress,
 }

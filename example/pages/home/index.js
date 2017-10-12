@@ -1,5 +1,5 @@
 import React from 'react'
-import { Group, Cell, Header } from '../../../src'
+import { Group, Cell, Header, version } from '../../../src'
 import Page from '../../component/page'
 import { Link } from 'react-router'
 
@@ -8,7 +8,7 @@ const checkedIcon = <i className="weui-icon-success-no-circle" style={{fontSize:
 let Home = React.createClass({
   render(){
     return (
-      <Page title="Weui React 组件库" subTitle="每天健康移动端UI组件库，持续更新中...">
+      <Page title={`Weui React 组件库 ${version}`} subTitle="每天健康移动端UI组件库，持续更新中...">
         <Group title="基础组件">
           <Cell label="Divider" desc="分隔线" icon={ checkedIcon } href={'/#/divider'}/>
           <Cell label="Grid" desc="宫格" icon={ checkedIcon } href={'/#/grid'}/>
@@ -32,6 +32,10 @@ let Home = React.createClass({
           <Cell label="Picker" desc="选择器" icon={ checkedIcon } href={'/#/picker'}/>
           <Cell label="Datetime" desc="日期选择" icon={ checkedIcon } href={'/#/datetime'}/>
           <Cell label="PopupPicker" desc="弹出层选择器" icon={ checkedIcon } href={'/#/popup-picker'}/>
+          <Cell label="PopupRadio" desc="弹出层单项选择器" icon={ checkedIcon } href={'/#/popup-radio'}/>
+          <Cell label="PopupAdress" desc="弹出层地址选择器" icon={ checkedIcon } href={'/#/popup-address'}/>
+          <Cell label="Range" desc="数值范围选择" icon={ checkedIcon } href={'/#/range'}/>
+          <Cell label="XNumber" desc="数量加减" icon={ checkedIcon } href={'/#/x-number'}/>
         </Group>
         <Group title="数据展示">
           <Cell label="FormPreview" desc="表单预览" icon={ checkedIcon } href={'/#/form-preview'}/>
@@ -45,6 +49,7 @@ let Home = React.createClass({
           <Cell label="Circle" desc="圆环进度" icon={ checkedIcon } href={'/#/circle'}/>
           <Cell label="Clocker" desc="倒计时" icon={ checkedIcon } href={'/#/clocker'}/>
           <Cell label="Countup" desc="数字增长" icon={ checkedIcon } href={'/#/countup'}/>
+          <Cell label="Progress" desc="进度条" icon={ checkedIcon } href={'/#/progress'}/>
         </Group>
         <Group title="导航相关">
           <Cell label="Tab" desc="选项卡" icon={ checkedIcon } href={'/#/tab'}/>

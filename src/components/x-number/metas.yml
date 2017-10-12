@@ -1,0 +1,39 @@
+props:
+  value:
+    type: Number
+    default: 0
+    desc: '默认数值'
+  label:
+    type: String
+    desc: 表单lable
+  min:
+    type: Number
+    default: 0
+    desc: 最小值
+  max:
+    type: Number
+    default: 100
+    desc: 最大值
+  step:
+    type: Number
+    default: 1
+    desc: 步长
+  fillable:
+    type: Boolean
+    default: false
+    desc: 是否可填写
+  width:
+    type: String
+    default: 50px
+    desc: 输入框宽度
+  buttonStyle:
+    type: String
+    default: square
+    desc: '按钮样式，可选值为`square`或者`round`'
+events:
+  onChange:
+    params: '`(value)`'
+    desc: 绑定值变化时触发事件
+changes:
+  v0.1.20:
+    - '[new] 新组件 数字加减组件'

@@ -10,7 +10,7 @@ import {
   Checkbox, Flex, Grid, Msg, Input, Swiper, Switch, Tab,
   Tip, Textarea, Sticky, Offcanvas, FormPreview, Picker,
   Previewer, Marquee, Circle, Clocker, Datetime, Countup,
-  PopupPicker,
+  PopupPicker, PopupRadio, PopupAddress, XNumber, Range, Progress,
 } from './index'
 
 let App = React.createClass({
@@ -52,6 +52,13 @@ let routes = (
     <Route name="datetime" handler={ Datetime }/>
     <Route name="countup" handler={ Countup }/>
     <Route name="popup-picker" handler={ PopupPicker }/>
+
+    <Route name="popup-radio" handler={ PopupRadio }/>
+    <Route name="popup-address" handler={ PopupAddress }/>
+    <Route name="progress" handler={ Progress }/>
+    <Route name="range" handler={ Range }/>
+    <Route name="x-number" handler={ XNumber }/>
+
     <DefaultRoute handler={ Home }/>
   </Route>
 )

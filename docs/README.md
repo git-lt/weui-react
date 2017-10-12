@@ -129,6 +129,7 @@ yarn run docs
 
 ## TODO LIST
 
+
 - [x] Divider
 - [x] Group
 - [x] Cell
@@ -160,20 +161,19 @@ yarn run docs
 - [x] Previewer
 - [x] Circle
 - [x] Marquee
-- [ ] DateTimeView
-- [ ] DateTimeRange
-- [ ] Datetime
-- [ ] Address
-- [ ] PopupPicker
-- [ ] PopupHeader
-- [ ] PopupRadio
-- [ ] Table
-- [ ] Countup 数字显示
-- [ ] Clocker 倒计时
-- [ ] Actionsheet
-- [ ] Number 数字加减
+- [x] PopupHeader
+- [x] Datetime
+- [x] Clocker
+- [x] Countup
+- [x] PopupPicker
+- [x] PopupRadio
+- [x] PopupAddress
+- [x] XNumber
+- [x] Range
+- [x] Progress
 
-
+- [ ] qrcode
+- [ ] scroller
 
 ## 感谢
 
