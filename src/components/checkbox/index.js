@@ -21,7 +21,6 @@ var Checkbox = React.createClass({
   },
 
   clickEv(e, data){
-    // console.log(data.disabled)
     // 如果是checkbox 达到最大限制，则不能再选
     const maxLimit = !this.state.isRadio && !data.checked && !!data.max && (data.max === this.props.checkedItems.length);
     !data.disabled && !maxLimit && this.props.onClick(data.value, data);
@@ -36,7 +35,6 @@ var Checkbox = React.createClass({
     const pos = position === 'right' ? 'ft' : 'hd';
 
     let opt = { type, name, className, value, id, checked, disabled }
-    console.log(shape)
     return (
       <div className={ `weui-cell__${pos}` }>
           <input { ...opt } { ...others } onChange={ this.changeEv }/>
