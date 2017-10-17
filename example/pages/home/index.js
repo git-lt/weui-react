@@ -13,7 +13,8 @@ let Home = React.createClass({
           <Cell label="Divider" desc="分隔线" icon={ checkedIcon } href={'/#/divider'}/>
           <Cell label="Grid" desc="宫格" icon={ checkedIcon } href={'/#/grid'}/>
           <Cell label="Flex" desc="Flex网格" icon={ checkedIcon } href={'/#/flex'}/>
-          <Cell label="GroupTitle" desc="分组标题" icon={ checkedIcon }/>
+          <Cell label="Button" desc="按钮" icon={ checkedIcon } href={'/#/button'}/>
+          <Cell label="Header" desc="页头" icon={ checkedIcon } href={'/#/header'}/>
         </Group>
         <Group title="操作反馈">
           <Cell label="Dialog" desc="对话框" icon={ checkedIcon } href={'/#/dialog'}/>
@@ -23,8 +24,8 @@ let Home = React.createClass({
           <Cell label="Offcanvas" desc="弹出层" icon={ checkedIcon } href={'/#/offcanvas'}/>
         </Group>
         <Group title="数据录入">
-          <Cell label="Button" desc="按钮" icon={ checkedIcon } href={'/#/button'}/>
           <Cell label="Group" desc="分组" icon={ checkedIcon }/>
+          <Cell label="GroupTitle" desc="分组标题" icon={ checkedIcon }/>
           <Cell label="Checkbox" desc="单选与多选" icon={ checkedIcon } href={'/#/checkbox'}/>
           <Cell label="Switch" desc="开关" icon={ checkedIcon } href={'/#/switch'}/>
           <Cell label="Input" desc="输入" icon={ checkedIcon } href={'/#/input'}/>
@@ -40,7 +41,6 @@ let Home = React.createClass({
         <Group title="数据展示">
           <Cell label="FormPreview" desc="表单预览" icon={ checkedIcon } href={'/#/form-preview'}/>
           <Cell label="Cell" desc="列表" icon={ checkedIcon } />
-          <Cell label="Header" desc="页头" icon={ checkedIcon } href={'/#/header'}/>
           <Cell label="Badge" desc="徽章" icon={ checkedIcon } href={'/#/badge'}/>
           <Cell label="Swiper" desc="滑动相册" icon={ checkedIcon } href={'/#/swiper'}/>
           <Cell label="Sticky" desc="滚动锁定" icon={ checkedIcon } href={'/#/sticky'}/>
