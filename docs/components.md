@@ -808,6 +808,21 @@ import { Swiper } from 'mt-weui-react'
 |-------|--------|---------|-------------|
 |onChange|||切换后的回调|
 ----
+### <span class="mt-component-name">Switch</span>
+<span class="mt-component-link"><a href="#" router-link="/demos/switch">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/switch" target="_bank">组件源码</a></span>
+``` js
+import { Switch } from 'mt-weui-react'
+```
+
+<span class="mt-props-title">Props</span>
+
+| name  | type | default | version | description |
+|-------|------|---------|---------|-------------|
+|label|Any|||表单文本|
+|checked|Boolean|||是否选中|
+|disabled|Boolean|||是否禁用|
+
+----
 ### <span class="mt-component-name">Tab</span>
 <span class="mt-component-link"><a href="#" router-link="/demos/tab">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/tab" target="_bank">组件源码</a></span>
 <p><span class="mt-component-name">Tab</span></p>
@@ -880,6 +895,11 @@ import { Tip } from 'mt-weui-react'
 |type|String|warning||显示类型，warning/info/success/error/default|
 |show|Boolean|true||是否显示|
 
+<span class="mt-props-title">Events</span>
+
+| name  | params | version | description |
+|-------|--------|---------|-------------|
+|onClose|||关闭的回调|
 ----
 ### <span class="mt-component-name">Toast</span>
 <span class="mt-component-link"><a href="#" router-link="/demos/toast">示例代码</a></span><span class="mt-component-link"><a href="https://github.com/git-lt/weui-react/tree/master/src/components/toast" target="_bank">组件源码</a></span>

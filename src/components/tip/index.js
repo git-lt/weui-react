@@ -2,6 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import './index.less'
 
+const noop = () => {}
 const defIcons = {
   'warning':<i className="weui-icon-warn weui-icon_msg-primary mt-tip-hd-icon"></i>,
   'success':<i className="weui-icon-success mt-tip-hd-icon"></i>,
@@ -14,7 +15,8 @@ var Tip = React.createClass({
     return { show: this.props.show }
   },
   closeEv(){
-    this.setState({ show: false });
+    this.setState({ show: false })
+    this.props.onClose()
   },
   render(){
     let {
@@ -51,6 +53,7 @@ Tip.propTypes = {
   duration: React.PropTypes.number,
   type: React.PropTypes.string,
   show: React.PropTypes.bool,
+  onClose: React.PropTypes.func,
 };
 
 Tip.defaultProps = {
@@ -60,6 +63,7 @@ Tip.defaultProps = {
   duration:0,       // 指定时长之后自动关闭
   type: 'warning',  // warning/info/success/error/default
   show: true,       // 是否显示
+  onClose: noop,
 };
 
 export default Tip;

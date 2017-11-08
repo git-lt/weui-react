@@ -22,3 +22,6 @@ events:
   onClose:
     params: ''
     desc: 关闭的回调
+changes:
+  v0.1.21:
+    - '[fix] 调整 `toast` 的 `z-index` 的层级为`2010`，比dialog的高'

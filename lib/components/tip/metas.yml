@@ -20,3 +20,9 @@ props:
     type: Boolean
     default: true
     desc: 是否显示
+events:
+  onClose:
+    desc: 关闭的回调
+changes:
+  v0.1.21:
+    - '[feature] 添加 `onClose` 提供关闭事件函数'

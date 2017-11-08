@@ -31,7 +31,7 @@ title: 首页
 ### 安装
 
 ```
-yarn add mt-react-weui
+yarn add mt-weui-react
 ```
 
 ### 全部引用

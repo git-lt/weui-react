@@ -1,0 +1,10 @@
+props:
+  label:
+    type: Any
+    desc: 表单文本
+  checked:
+    type: Boolean
+    desc: 是否选中
+  disabled:
+    type: Boolean
+    desc: 是否禁用

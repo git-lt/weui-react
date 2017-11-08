@@ -1,4 +1,8 @@
 
+## v0.1.21
+- Tip - <span class="change-tag feature">feature</span> 添加 `onClose` 提供关闭事件函数
+- Toast - <span class="change-tag fix">fix</span> 调整 `toast` 的 `z-index` 的层级为`2010`，比dialog的高
+
 ## v0.1.20
 - PopupAddress - <span class="change-tag new">new</span> 新组件 弹出层地址选择器
 - Progress - <span class="change-tag new">new</span> 新组件 进度条组件
