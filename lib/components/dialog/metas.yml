@@ -26,3 +26,5 @@ events:
 changes:
   v0.1.22:
     - '[enhance] 添加 `closable` 配置控制是否显示关闭按钮图标'
+  v0.1.23:
+    - '[change] 弱化关闭按钮图标颜色为999'
