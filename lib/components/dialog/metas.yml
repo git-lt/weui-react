@@ -13,9 +13,16 @@ props:
   message:
     type: 'Any'
     desc: '对话框的内容'
+  closable:
+    type: Boolean
+    default: false
+    desc: '是否显示关闭'
 events:
   onShow:
     params: ''
     desc: 打开的回调
   onClose:
     desc: 关闭的回调
+changes:
+  v0.1.22:
+    - '[enhance] 添加 `closable` 配置控制是否显示关闭按钮图标'

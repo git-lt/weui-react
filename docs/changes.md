@@ -1,4 +1,7 @@
 
+## v0.1.22
+- Dialog - <span class="change-tag enhance">enhance</span> 添加 `closable` 配置控制是否显示关闭按钮图标
+
 ## v0.1.21
 - Tip - <span class="change-tag feature">feature</span> 添加 `onClose` 提供关闭事件函数
 - Toast - <span class="change-tag fix">fix</span> 调整 `toast` 的 `z-index` 的层级为`2010`，比dialog的高

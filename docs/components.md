@@ -194,6 +194,7 @@ import { Dialog } from 'mt-weui-react'
 |show|Boolean|||是否显示|
 |title|String|||标题|
 |message|Any|||对话框的内容|
+|closable|Boolean|||是否显示关闭|
 
 <span class="mt-props-title">Events</span>
 

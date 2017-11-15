@@ -1,12 +1,10 @@
 props:
   label:
-    type: 'Any'
-    desc: '标题 一般使用文本，更复杂的可使用jsx'
+    type: Any
+    desc: 表单文本
   checked:
     type: Boolean
-    default: false
     desc: 是否选中
   disabled:
     type: Boolean
-    default: false
     desc: 是否禁用

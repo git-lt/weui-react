@@ -55,6 +55,12 @@ var Demo = React.createClass({
       ],
     })
   },
+  showDialogClosable: function(){
+    dialog.show({
+      message: '是否确认删除？',
+      closable: true
+    })
+  },
   render: function() {
       return (
         <Page title="Dialog">
@@ -62,6 +68,10 @@ var Demo = React.createClass({
             <Cell label="dialog.show(...)" desc="默认" onClick={()=>dialog.show('是否确认删除？')} isLink/>
             <Cell label="dialog.show({...})" desc="多个操作" onClick={ this.showDialogActions } isLink/>
             <Cell label="dialog.show({...})" desc="内容过多" onClick={ this.showDialogMore } isLink/>
+          </Group>
+
+          <Group title="带关闭图标">
+            <Cell label="dialog.show({...})" desc="可关闭" onClick={ this.showDialogClosable } isLink/>
           </Group>
 
           <Message/>

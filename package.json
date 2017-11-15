@@ -1,10 +1,10 @@
 {
   "name": "mt-weui-react",
-  "version": "0.1.21",
+  "version": "0.1.22",
   "description": "weui for react",
   "main": "./lib",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --progress --colors --port 8081",
+    "start": "webpack-dev-server --hot --inline --progress --colors --port 8881",
     "build:less": "find lib/ -name '*.less' -exec lessc -x {} \\; > ./lib/react-weui.min.css",
     "build": "NODE_ENV=production babel ./src --out-dir ./lib --copy-files && yarn run build:less",
     "build:example": "webpack --config webpack.config.prod.js --progress --colors -p",

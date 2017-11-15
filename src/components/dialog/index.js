@@ -1,5 +1,6 @@
 import React from 'react'
 import classNames from 'classnames'
+import PubSub from 'pubsub-js'
 import './index.less'
 
 const noop = ()=>{};
@@ -26,24 +27,24 @@ var Dialog = React.createClass({
   },
 
   renderButtons() {
-      return this.props.buttons.map((action, idx) => {
-          let {type, label, ...others} = action;
+    return this.props.buttons.map((action, idx) => {
+      let {type, label, ...others} = action;
 
-          type = type ? type : 'primary';
+      type = type ? type : 'primary';
 
-          const className = classNames({
-              'weui-dialog__btn weui-dialog__btn_default': type === 'default',
-              'weui-dialog__btn weui-dialog__btn_primary maincolor': type === 'primary'
-          });
-
-          return (
-              <a key={idx} href="javascript:;" {...others} className={className}>{label}</a>
-          );
+      const className = classNames({
+        'weui-dialog__btn weui-dialog__btn_default': type === 'default',
+        'weui-dialog__btn weui-dialog__btn_primary maincolor': type === 'primary'
       });
+
+      return (
+        <a key={idx} href="javascript:;" {...others} className={className}>{label}</a>
+      );
+    });
   },
 
   render() {
-      const {title, className, children, buttons, message, ...others} = this.props;
+      const {title, className, children, buttons, closable, message, ...others} = this.props;
       const { active, display } = this.state;
 
       const wrapCls = classNames('mt-dialog-wrap', {
@@ -52,23 +53,26 @@ var Dialog = React.createClass({
       })
 
       const innerCls = classNames('weui-dialog', {
-          [className]: className
+        [className]: className
       })
 
       return (
           <div>
-              <div className={wrapCls}>
-                <div className={innerCls} {...others} ref="mtDialogCon">
-                    {
-                      !!title && <div className="weui-dialog__hd">
-                          <strong className="weui-dialog__title">{title}</strong>
-                      </div>
-                    }
-                    <div className="weui-dialog__bd"> {message || children} </div>
-                    <div className="weui-dialog__ft"> {this.renderButtons()} </div>
-                </div>
+            <div className={wrapCls}>
+              <div className={innerCls} {...others} ref="mtDialogCon">
+                {
+                  closable && <i className="weui-icon-cancel weui-dialog__close" onClick={() => PubSub.publish('HIDE_DIALOG')}></i>
+                }
+                {
+                  !!title && <div className="weui-dialog__hd">
+                      <strong className="weui-dialog__title">{title}</strong>
+                  </div>
+                }
+                <div className="weui-dialog__bd"> {message || children} </div>
+                <div className="weui-dialog__ft"> {this.renderButtons()} </div>
               </div>
-              <div className="weui-mask mt-dialog-mask" onTouchMove={ e=>{e.preventDefault()} }></div>
+            </div>
+            <div className="weui-mask mt-dialog-mask" onTouchMove={ e=>{e.preventDefault()} }></div>
           </div>
       );
   }
@@ -100,11 +104,13 @@ Dialog.propTypes = {
    * message: anything
    */
   message: React.PropTypes.any,
+  closable: React.PropTypes.bool,
 };
 
 Dialog.defaultProps = {
     buttons: [],
     show: false,
+    closable: false,
     title: '',
     message:'',
     onShow: noop,
