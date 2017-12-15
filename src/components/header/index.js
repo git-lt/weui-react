@@ -1,6 +1,12 @@
 import React from 'react'
 import { browser } from 'amfe-env'
-const isWebview = !!browser.isWebview  || browser.name == 'QQ';
+
+let inMachine = false
+try{
+  inMachine = window.localStorage.getItem('fromMachine') === '1'
+}catch(e){}
+
+const isWebview = !!browser.isWebview  || browser.name == 'QQ' || inMachine
 import './index.less'
 
 var Header = React.createClass({
@@ -16,12 +22,14 @@ var Header = React.createClass({
       }
     }
   },
+
   goHome(){
     let homeUrl = this.props.homeUrl
     if(homeUrl) window.location.href = homeUrl
   },
-  componentDidMount(){
-    document.title = this.props.title || this.props.children;
+
+  setTitle( title ){
+    document.title = title;
     if (/ip(hone|od|ad)/i.test(navigator.userAgent)) {
         var i = document.createElement('iframe');
         i.src = '/favicon.ico';
@@ -43,6 +51,10 @@ var Header = React.createClass({
 
     let lineSty = {}
     lineColor && ( lineSty.backgroundColor = lineColor )
+
+    const nextTitle = title || children || ''
+
+    nextTitle && this.setTitle(nextTitle)
 
     // webview不展示头
     if(isWebview) return null;
