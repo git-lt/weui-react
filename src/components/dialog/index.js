@@ -27,6 +27,7 @@ var Dialog = React.createClass({
   },
 
   renderButtons() {
+
     return this.props.buttons.map((action, idx) => {
       let {type, label, ...others} = action;
 
@@ -46,6 +47,8 @@ var Dialog = React.createClass({
   render() {
       const {title, className, children, buttons, closable, message, ...others} = this.props;
       const { active, display } = this.state;
+
+      const btnNum = this.props.buttons.length
 
       const wrapCls = classNames('mt-dialog-wrap', {
         'mt-dialog-wrap__active': active,
@@ -69,7 +72,7 @@ var Dialog = React.createClass({
                   </div>
                 }
                 <div className="weui-dialog__bd"> {message || children} </div>
-                <div className="weui-dialog__ft"> {this.renderButtons()} </div>
+                <div className={`weui-dialog__ft ${btnNum >2 ? 'weui-dialog__ft_column':''}`}> {this.renderButtons()} </div>
               </div>
             </div>
             <div className="weui-mask mt-dialog-mask" onTouchMove={ e=>{e.preventDefault()} }></div>

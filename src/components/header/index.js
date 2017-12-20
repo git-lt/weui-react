@@ -1,15 +1,19 @@
 import React from 'react'
-import { browser } from 'amfe-env'
+import { browser, thirdapp } from 'amfe-env'
 
 let inMachine = false
 try{
   inMachine = window.localStorage.getItem('fromMachine') === '1'
 }catch(e){}
 
-const isWebview = !!browser.isWebview  || browser.name == 'QQ' || inMachine
+const isWebview = !!browser.isWebview || thirdapp.isWeixin || inMachine
 import './index.less'
 
 var Header = React.createClass({
+  getInitialState(){
+    this.title = this.props.title || this.props.children
+    return {}
+  },
   goBackEv(){
     if(this.props.onClickBack){
       this.props.onClickBack();
@@ -31,16 +35,26 @@ var Header = React.createClass({
   setTitle( title ){
     document.title = title;
     if (/ip(hone|od|ad)/i.test(navigator.userAgent)) {
-        var i = document.createElement('iframe');
-        i.src = '/favicon.ico';
-        i.style.display = 'none';
-        i.onload = function() {
-            setTimeout(function(){
-                i.remove();
-            }, 9)
-        }
-        document.body.appendChild(i);
+      var i = document.createElement('iframe');
+      i.src = '/favicon.ico';
+      i.style.display = 'none';
+      i.onload = function() {
+          setTimeout(function(){
+              i.remove();
+          }, 9)
+      }
+      document.body.appendChild(i);
     }
+  },
+
+  componentDidUpdate(){
+    const nextTitle = this.props.title || this.props.children || ''
+    if(this.title !== nextTitle){
+      this.setTitle(nextTitle)
+      this.title = nextTitle
+    }
+
+    console.log('header didUpdate: ', nextTitle)
   },
 
   render(){
@@ -51,10 +65,6 @@ var Header = React.createClass({
 
     let lineSty = {}
     lineColor && ( lineSty.backgroundColor = lineColor )
-
-    const nextTitle = title || children || ''
-
-    nextTitle && this.setTitle(nextTitle)
 
     // webview不展示头
     if(isWebview) return null;

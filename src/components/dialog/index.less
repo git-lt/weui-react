@@ -25,6 +25,19 @@
       color: #F43530;
     }
   }
+  &__ft_column {
+    flex-direction: column;
+    .weui-dialog__btn:after {
+      top: auto;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 1px;
+      border-left: 0;
+      border-bottom: 1px solid #D5D5D6;
+      transform: scaleY(0.5);
+    }
+  }
 }
 .mt-dialog-mask {
   z-index: -1;

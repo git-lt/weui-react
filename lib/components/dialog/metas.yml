@@ -24,6 +24,8 @@ events:
   onClose:
     desc: 关闭的回调
 changes:
+  v0.1.30:
+    - '[enhance] 当按钮超过两个以后，以100%宽度展示'
   v0.1.22:
     - '[enhance] 添加 `closable` 配置控制是否显示关闭按钮图标'
   v0.1.23:
