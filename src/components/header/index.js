@@ -14,6 +14,7 @@ var Header = React.createClass({
     this.title = this.props.title || this.props.children
     return {}
   },
+
   goBackEv(){
     if(this.props.onClickBack){
       this.props.onClickBack();
@@ -45,6 +46,10 @@ var Header = React.createClass({
       }
       document.body.appendChild(i);
     }
+  },
+
+  componentDidMount(){
+    !!this.title && this.setTitle(this.title)
   },
 
   componentDidUpdate(){
