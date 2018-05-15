@@ -33,7 +33,7 @@ var Header = React.createClass({
   },
 
   setTitle( title ){
-    document.title = title;
+    document.title = this.props.showDocumentTitle ? title : '';
     if (/ip(hone|od|ad)/i.test(navigator.userAgent)) {
       var i = document.createElement('iframe');
       i.src = '/favicon.ico';
@@ -106,6 +106,7 @@ Header.propTypes = {
   homeUrl: React.PropTypes.string,
   preventGoBack: React.PropTypes.bool,
   lineColor: React.PropTypes.string,
+  showDocumentTitle: React.PropTypes.bool,
 };
 
 Header.defaultProps = {
@@ -114,6 +115,7 @@ Header.defaultProps = {
   lineColor: '',
   showBack: true,// 是否显示左侧的返回按钮
   showHome: true,// 是否显示右侧的首页图标
+  showDocumentTitle: true,// 是否显示页面tile
   homeUrl: '',
   onClickBack: null,
   preventGoBack: false,//是否阻止返回
