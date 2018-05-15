@@ -39,7 +39,7 @@ events:
 
 changes:
   v0.1.32:
-      '[change] 去掉webview中的header判断'
+    - '[change] 去掉webview中的header判断'
   v0.1.26:
     - '[fix] 修复header组件不能异步设置title的bug'
   v0.1.19:
