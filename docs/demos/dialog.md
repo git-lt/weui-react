@@ -61,6 +61,17 @@ var Demo = React.createClass({
       closable: true
     })
   },
+  showMultBtn(){
+    dialog.show({
+      title: '提示',
+      message: '说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字说明文字',
+      buttons:[
+        {label: '确定', type: 'primary', onClick: dialog.hide},
+        {label: '修改', type: 'default', onClick: dialog.hide},
+        {label: '关闭', type: 'default', onClick: dialog.hide}
+      ]
+    })
+  },
   render: function() {
       return (
         <Page title="Dialog">
@@ -72,6 +83,10 @@ var Demo = React.createClass({
 
           <Group title="带关闭图标">
             <Cell label="dialog.show({...})" desc="可关闭" onClick={ this.showDialogClosable } isLink/>
+          </Group>
+
+          <Group title="大于2个按钮">
+            <Cell label="dialog.show({...})" desc="2个按钮以上" onClick={ this.showMultBtn } isLink/>
           </Group>
 
           <Message/>

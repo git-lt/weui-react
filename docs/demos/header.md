@@ -15,10 +15,15 @@
 
 ``` javascript
 import React from 'react'
-import { Message, dialog, toast, Header } from 'mt-weui-react'
+import { Message, dialog, Header, Button } from 'mt-weui-react'
 import Page from '../../component/page'
 
 var Demo = React.createClass({
+  getInitialState(){
+    return {
+      title: '页面标题'
+    }
+  },
   goBackEv(){
     dialog.show({
       message: '您还有未保存的数据，是否确认返回？',
@@ -49,6 +54,12 @@ var Demo = React.createClass({
             <div className="weui-cells__title">阻止返回事件</div>
             <Header showBack onClickBack={ this.goBackEv }>页面标题</Header>
 
+            <div className="weui-cells__title">异步设置标题</div>
+            <Header showBack onClickBack={ this.goBackEv } title={this.state.title}></Header>
+
+            <div style={{padding: 30}}>
+              <Button type="primary" onClick={()=>this.setState({title: '异步标题'})}>改变标题为异步标题</Button>
+            </div>
             <Message />
           </Page>
       );

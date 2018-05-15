@@ -1,12 +1,11 @@
 import React from 'react'
-import { browser, thirdapp } from 'amfe-env'
+// import { browser, thirdapp } from 'amfe-env'
+// let inMachine = false
+// try{
+//   inMachine = window.localStorage.getItem('fromMachine') === '1'
+// }catch(e){}
+// const isWebview = !!browser.isWebview || thirdapp.isWeixin || inMachine
 
-let inMachine = false
-try{
-  inMachine = window.localStorage.getItem('fromMachine') === '1'
-}catch(e){}
-
-const isWebview = !!browser.isWebview || thirdapp.isWeixin || inMachine
 import './index.less'
 
 var Header = React.createClass({
@@ -72,7 +71,7 @@ var Header = React.createClass({
     lineColor && ( lineSty.backgroundColor = lineColor )
 
     // webview不展示头
-    if(isWebview) return null;
+    // if(isWebview) return null;
 
     return(
       <div className="mt-header-wrap">

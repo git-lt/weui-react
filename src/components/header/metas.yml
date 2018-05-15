@@ -38,6 +38,8 @@ events:
     desc: '点击返回时执行的事件，此时不会自动返回'
 
 changes:
+  v0.1.32:
+    - '[change] 去掉webview中的header判断'
   v0.1.26:
     - '[fix] 修复header组件不能异步设置title的bug'
   v0.1.19:

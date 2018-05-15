@@ -1,16 +1,22 @@
 
-## v0.1.9
-- Header - <span class="change-tag feature">feature</span> 添加Header容器，使用Header Fixed定位
+## v0.1.26
+- Header - <span class="change-tag fix">fix</span> 修复header组件不能异步设置title的bug
 
 ## v0.1.21
 - Tip - <span class="change-tag feature">feature</span> 添加 `onClose` 提供关闭事件函数
 - Toast - <span class="change-tag fix">fix</span> 调整 `toast` 的 `z-index` 的层级为`2010`，比dialog的高
 
-## v0.1.23
-- Dialog - <span class="change-tag change">change</span> 弱化关闭按钮图标颜色为999
+## v0.1.32
+- Header - <span class="change-tag change">change</span> 去掉webview中的header判断
+
+## v0.1.30
+- Dialog - <span class="change-tag enhance">enhance</span> 当按钮超过两个以后，以100%宽度展示
 
 ## v0.1.22
 - Dialog - <span class="change-tag enhance">enhance</span> 添加 `closable` 配置控制是否显示关闭按钮图标
+
+## v0.1.23
+- Dialog - <span class="change-tag change">change</span> 弱化关闭按钮图标颜色为999
 
 ## v0.1.20
 - PopupAddress - <span class="change-tag new">new</span> 新组件 弹出层地址选择器
@@ -42,6 +48,9 @@
 ## v0.1.15
 - Picker - <span class="change-tag new">new</span> 新组件 数据选择器
 - Previewer - <span class="change-tag new">new</span> 新组件 图片查看器，点击放大查看图片
+
+## v0.1.9
+- Header - <span class="change-tag feature">feature</span> 添加Header容器，使用Header Fixed定位
 
 ## v0.1.8
 - Header - <span class="change-tag feature">feature</span> 添加 `lineColor` 用于配置底边线颜色
