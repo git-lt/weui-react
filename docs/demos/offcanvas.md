@@ -68,7 +68,7 @@ var Demo = React.createClass({
 
           <Offcanvas show={ this.state.centerShowTop } onClose={ ()=>this.setState({ centerShowTop: false })}>
             <div style={{width: 260}}>
-              <img style={{borderRadius: '3px', overflow: 'hidden'}} src="https://static.vux.li/demos/v2/static/img/01.06186f7.jpg" alt=""/>
+              <img style={{borderRadius: '3px', overflow: 'hidden'}} src="http://via.placeholder.com/300x400/8ac7ff" alt=""/>
               <div className="tc pt10">
                 <i className="weui-icon-cancel" style={{color:'#fff', fontSize: '26px'}} onClick={()=>this.setState({centerShowTop: false})}></i>
               </div>
@@ -77,7 +77,7 @@ var Demo = React.createClass({
 
           <Offcanvas show={ this.state.centerShowBottom } animate="slide-in-bottom" onClose={ ()=>this.setState({ centerShowBottom: false })}>
             <div style={{width: 260}}>
-              <img style={{borderRadius: '3px', overflow: 'hidden'}} src="https://static.vux.li/demos/v2/static/img/01.06186f7.jpg" alt=""/>
+              <img style={{borderRadius: '3px', overflow: 'hidden'}} src="http://via.placeholder.com/300x400/8ac7ff" alt=""/>
               <div className="tc pt10">
                 <i className="weui-icon-cancel" style={{color:'#fff', fontSize: '26px'}} onClick={()=>this.setState({centerShowBottom: false})}></i>
               </div>
@@ -86,7 +86,7 @@ var Demo = React.createClass({
 
           <Offcanvas show={ this.state.centerShowCenter } animate="zoom-in" onClose={ ()=>this.setState({ centerShowCenter: false })}>
             <div style={{width: 260}}>
-              <img style={{borderRadius: '3px', overflow: 'hidden'}} src="https://static.vux.li/demos/v2/static/img/01.06186f7.jpg" alt=""/>
+              <img style={{borderRadius: '3px', overflow: 'hidden'}} src="http://via.placeholder.com/300x400/8ac7ff" alt=""/>
               <div className="tc pt10">
                 <i className="weui-icon-cancel" style={{color:'#fff', fontSize: '26px'}} onClick={()=>this.setState({centerShowCenter: false})}></i>
               </div>
