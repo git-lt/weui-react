@@ -1,3 +1,5 @@
+##【已经停止维护】
+
 ## 简介
 
 - 基于 [WeUI v1.1.2](https://github.com/weui/weui) 及 [React 0.13.3](https://github.com/facebook/react/tree/v0.13.3)
